@@ -1,4 +1,6 @@
 import { X } from "lucide-react"
+;("use client")
+import { useLanguage } from "@/contexts/language-context"
 
 const painPoints = [
   {
@@ -24,16 +26,18 @@ const painPoints = [
 ]
 
 export function ProblemSection() {
+  const { t } = useLanguage()
+
   return (
     <section className="py-20 bg-secondary/50">
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto space-y-12">
           <h2 className="text-4xl md:text-5xl font-bold text-center text-balance">
-            TRADITIONAL ERPs ARE <span className="gradient-text">OBSOLETE</span>
+            {t.problem.title} <span className="gradient-text">{t.problem.titleHighlight}</span>
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {painPoints.map((point, index) => (
+            {t.problem.painPoints.map((point, index) => (
               <div
                 key={index}
                 className="bg-card border border-border rounded-xl p-6 space-y-3 hover:border-destructive/50 transition-all"
@@ -46,11 +50,7 @@ export function ProblemSection() {
           </div>
 
           <div className="mt-12 border-l-4 border-l-[#ED2009] bg-card/80 p-8 rounded-r-xl">
-            <p className="text-xl md:text-2xl font-medium italic leading-relaxed text-balance">
-              {
-                "SAP, Oracle, Odoo... have AI. But it's an ASSISTANT that needs humans. We have an AGENT that works autonomously."
-              }
-            </p>
+            <p className="text-xl md:text-2xl font-medium italic leading-relaxed text-balance">{t.problem.quote}</p>
           </div>
         </div>
       </div>

@@ -2,12 +2,18 @@
 
 import { useState } from "react"
 import { ChevronDown } from "lucide-react"
+import { useLanguage } from "@/contexts/language-context"
 
 const faqs = [
   {
     question: "Does CUBIX really work without consultants?",
     answer:
-      "Yes! CUBIX is designed with 90% autonomy. The AI handles configuration, troubleshooting, and optimization automatically. Unlike traditional ERPs that require expensive consultants (€100-200/hour), CUBIX self-manages and self-heals, eliminating the need for ongoing consulting fees.",
+      "CUBIX doesn't require consultants for implementation, unlike traditional ERPs. We offer optional consulting services if you prefer human contact, but we also have integrated artificial intelligence that can answer any question in the best possible way. This is a competitive advantage because consulting is optional, not mandatory. Companies can save money by using the built-in AI instead of paying for expensive consulting fees.",
+  },
+  {
+    question: "If I want to switch from an ERP that I already have to CUBIX, what are my advantages?",
+    answer:
+      "We have a system that can run simultaneously with your existing ERP, allowing you to test CUBIX at the same time. All data created in both CUBIX and your other ERP is shared between the two systems. We capture all data from both sides and sync it automatically. For example, create an invoice in either system and it appears in both. Your ERP needs to be compatible with webhook or API connections for this integration. This way, you can test CUBIX thoroughly before fully migrating.",
   },
   {
     question: "How does local AI vs central AI work?",
@@ -37,6 +43,7 @@ const faqs = [
 ]
 
 export function FAQSection() {
+  const { t } = useLanguage()
   const [openIndex, setOpenIndex] = useState<number | null>(null)
 
   return (
@@ -44,11 +51,11 @@ export function FAQSection() {
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto space-y-12">
           <h2 className="text-4xl md:text-5xl font-bold text-center text-balance">
-            FREQUENTLY ASKED <span className="gradient-text">QUESTIONS</span>
+            {t.faq.title} <span className="gradient-text">{t.faq.titleHighlight}</span>
           </h2>
 
           <div className="space-y-4">
-            {faqs.map((faq, index) => (
+            {t.faq.items.map((faq, index) => (
               <div
                 key={index}
                 className={`bg-card border rounded-xl overflow-hidden transition-all ${
@@ -75,16 +82,7 @@ export function FAQSection() {
           </div>
 
           <div className="text-center pt-8">
-            <button
-              onClick={() => {
-                const element = document.getElementById("demo")
-                if (element) element.scrollIntoView({ behavior: "smooth" })
-              }}
-              className="text-primary hover:text-primary/80 font-semibold inline-flex items-center gap-2 group"
-            >
-              Still have questions? Contact us
-              <span className="group-hover:translate-x-1 transition-transform">→</span>
-            </button>
+            
           </div>
         </div>
       </div>

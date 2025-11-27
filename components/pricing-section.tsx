@@ -1,43 +1,14 @@
 "use client"
 
-import { Briefcase, Building2, Rocket } from "lucide-react"
+import { Cloud, Server } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { useLanguage } from "@/contexts/language-context"
 
-const pricingTiers = [
-  {
-    icon: Briefcase,
-    name: "STARTER",
-    subtitle: "For SMBs",
-    features: ["Up to 10 users", "Core modules included", "Email support", "Monthly updates"],
-  },
-  {
-    icon: Building2,
-    name: "BUSINESS",
-    subtitle: "Medium Enterprises",
-    features: [
-      "Up to 50 users",
-      "All modules included",
-      "Priority AI support",
-      "Custom workflows",
-      "Advanced analytics",
-    ],
-    highlighted: true,
-  },
-  {
-    icon: Rocket,
-    name: "ENTERPRISE",
-    subtitle: "Large Scale",
-    features: [
-      "Unlimited users",
-      "Full customization",
-      "Dedicated AI layer",
-      "On-premise option",
-      "White-label available",
-    ],
-  },
-]
+const tierIcons = [Cloud, Server]
 
 export function PricingSection() {
+  const { t } = useLanguage()
+
   const scrollToDemo = () => {
     const element = document.getElementById("demo")
     if (element) {
@@ -51,18 +22,20 @@ export function PricingSection() {
         <div className="max-w-6xl mx-auto space-y-12">
           <div className="text-center space-y-4">
             <h2 className="text-4xl md:text-5xl font-bold text-balance">
-              FLEXIBLE <span className="gradient-text">PLANS</span> FOR YOUR BUSINESS
+              {t.pricing.title} <span className="gradient-text">{t.pricing.titleHighlight}</span> {t.pricing.titleEnd}
             </h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">{t.pricing.subtitle}</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {pricingTiers.map((tier, index) => {
-              const Icon = tier.icon
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {t.pricing.tiers.map((tier, index) => {
+              const Icon = tierIcons[index]
+              const highlighted = index === 1
               return (
                 <div
                   key={index}
                   className={`bg-card border rounded-xl p-8 space-y-6 hover:scale-105 transition-all ${
-                    tier.highlighted ? "border-primary shadow-xl shadow-primary/20 md:-translate-y-4" : "border-border"
+                    highlighted ? "border-primary shadow-xl shadow-primary/20 md:-translate-y-4" : "border-border"
                   }`}
                 >
                   <div className="space-y-2">
@@ -83,11 +56,11 @@ export function PricingSection() {
                   </ul>
 
                   <Button
-                    variant={tier.highlighted ? "default" : "outline"}
-                    className={`w-full ${tier.highlighted ? "gradient-primary" : ""}`}
+                    variant={highlighted ? "default" : "outline"}
+                    className={`w-full ${highlighted ? "gradient-primary" : ""}`}
                     onClick={scrollToDemo}
                   >
-                    Contact Us
+                    {t.pricing.cta}
                   </Button>
                 </div>
               )
@@ -95,9 +68,7 @@ export function PricingSection() {
           </div>
 
           <div className="bg-accent/10 border border-accent/30 rounded-xl p-6 text-center">
-            <p className="text-accent font-semibold">
-              ⚠️ Due to high demand, we are prioritizing companies that schedule a demonstration
-            </p>
+            <p className="text-accent font-semibold">{t.pricing.alert}</p>
           </div>
         </div>
       </div>

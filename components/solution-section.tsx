@@ -1,55 +1,28 @@
-import { Sparkles, Wrench, Clock, Users, Timer, TrendingUp } from "lucide-react"
+"use client"
 
-const features = [
-  {
-    icon: Sparkles,
-    title: "90% Autonomy",
-    description: "AI handles operations end-to-end without human intervention",
-  },
-  {
-    icon: Wrench,
-    title: "Bugs Auto-Fix Themselves",
-    description: "Self-healing system detects and resolves issues automatically",
-  },
-  {
-    icon: Clock,
-    title: "24/7 Support <1sec",
-    description: "Instant AI responses, no tickets, no waiting",
-  },
-  {
-    icon: Users,
-    title: "Zero Consultants",
-    description: "Save €100-200/hour with autonomous operations",
-  },
-  {
-    icon: Timer,
-    title: "MTTR: 30min vs 4h",
-    description: "8x faster mean time to resolution",
-  },
-  {
-    icon: TrendingUp,
-    title: "Self-Evolving System",
-    description: "Learns and optimizes continuously from your data",
-  },
-]
+import { Sparkles, Wrench, Clock, Users, Timer, TrendingUp } from "lucide-react"
+import { useLanguage } from "@/contexts/language-context"
+
+const featureIcons = [Sparkles, Wrench, Clock, Users, Timer, TrendingUp]
 
 export function SolutionSection() {
+  const { t } = useLanguage()
+
   return (
     <section id="product" className="py-20">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto space-y-12">
           <div className="text-center space-y-4">
             <h2 className="text-4xl md:text-5xl font-bold text-balance">
-              CUBIX: <span className="gradient-text">STRUCTURAL AI</span>, NOT ADD-ON
+              {t.solution.title} <span className="gradient-text">{t.solution.titleHighlight}</span>
+              {t.solution.titleEnd}
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Built from the ground up with AI at its core, not bolted on as an afterthought
-            </p>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">{t.solution.subtitle}</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {features.map((feature, index) => {
-              const Icon = feature.icon
+            {t.solution.features.map((feature, index) => {
+              const Icon = featureIcons[index]
               return (
                 <div
                   key={index}

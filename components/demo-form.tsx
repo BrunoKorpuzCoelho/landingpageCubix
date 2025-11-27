@@ -9,8 +9,11 @@ import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { Checkbox } from "@/components/ui/checkbox"
 import { Rocket, Lock } from "lucide-react"
+import { useLanguage } from "@/contexts/language-context"
 
 export function DemoForm() {
+  const { t } = useLanguage()
+
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -46,11 +49,8 @@ export function DemoForm() {
         <div className="h-20 w-20 rounded-full gradient-primary flex items-center justify-center mx-auto">
           <Rocket className="h-10 w-10 text-white" />
         </div>
-        <h3 className="text-3xl font-bold">Thank You!</h3>
-        <p className="text-xl text-muted-foreground">
-          We've received your request. Our team will contact you within 24 hours to schedule your personalized
-          demonstration.
-        </p>
+        <h3 className="text-3xl font-bold">{t.demo.success.title}</h3>
+        <p className="text-xl text-muted-foreground">{t.demo.success.message}</p>
       </div>
     )
   }
@@ -59,7 +59,9 @@ export function DemoForm() {
     <form onSubmit={handleSubmit} className="max-w-2xl mx-auto space-y-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="space-y-2">
-          <Label htmlFor="fullName">Full Name *</Label>
+          <Label htmlFor="fullName">
+            {t.demo.form.fullName} {t.demo.form.required}
+          </Label>
           <Input
             id="fullName"
             required
@@ -70,7 +72,9 @@ export function DemoForm() {
         </div>
 
         <div className="space-y-2">
-          <Label htmlFor="email">Business Email *</Label>
+          <Label htmlFor="email">
+            {t.demo.form.email} {t.demo.form.required}
+          </Label>
           <Input
             id="email"
             type="email"
@@ -82,7 +86,9 @@ export function DemoForm() {
         </div>
 
         <div className="space-y-2">
-          <Label htmlFor="company">Company *</Label>
+          <Label htmlFor="company">
+            {t.demo.form.company} {t.demo.form.required}
+          </Label>
           <Input
             id="company"
             required
@@ -93,7 +99,7 @@ export function DemoForm() {
         </div>
 
         <div className="space-y-2">
-          <Label htmlFor="phone">Phone</Label>
+          <Label htmlFor="phone">{t.demo.form.phone}</Label>
           <Input
             id="phone"
             type="tel"
@@ -104,7 +110,9 @@ export function DemoForm() {
         </div>
 
         <div className="space-y-2">
-          <Label htmlFor="employees">Number of Employees *</Label>
+          <Label htmlFor="employees">
+            {t.demo.form.employees} {t.demo.form.required}
+          </Label>
           <select
             id="employees"
             required
@@ -112,16 +120,18 @@ export function DemoForm() {
             onChange={(e) => handleChange("employees", e.target.value)}
             className="w-full h-10 px-3 rounded-md bg-input border border-border text-foreground focus:border-primary/50 focus:outline-none focus:ring-2 focus:ring-primary/20"
           >
-            <option value="">Select...</option>
-            <option value="1-10">1-10</option>
-            <option value="11-50">11-50</option>
-            <option value="51-200">51-200</option>
-            <option value="200+">200+</option>
+            <option value="">{t.demo.form.selectPlaceholder}</option>
+            <option value="1-10">{t.demo.form.employeeOptions["1-10"]}</option>
+            <option value="11-50">{t.demo.form.employeeOptions["11-50"]}</option>
+            <option value="51-200">{t.demo.form.employeeOptions["51-200"]}</option>
+            <option value="200+">{t.demo.form.employeeOptions["200+"]}</option>
           </select>
         </div>
 
         <div className="space-y-2">
-          <Label htmlFor="schedule">When would you like to schedule? *</Label>
+          <Label htmlFor="schedule">
+            {t.demo.form.schedule} {t.demo.form.required}
+          </Label>
           <select
             id="schedule"
             required
@@ -129,23 +139,23 @@ export function DemoForm() {
             onChange={(e) => handleChange("schedule", e.target.value)}
             className="w-full h-10 px-3 rounded-md bg-input border border-border text-foreground focus:border-primary/50 focus:outline-none focus:ring-2 focus:ring-primary/20"
           >
-            <option value="">Select...</option>
-            <option value="this-week">This week</option>
-            <option value="next-week">Next week</option>
-            <option value="evaluating">Still evaluating</option>
+            <option value="">{t.demo.form.selectPlaceholder}</option>
+            <option value="this-week">{t.demo.form.scheduleOptions["this-week"]}</option>
+            <option value="next-week">{t.demo.form.scheduleOptions["next-week"]}</option>
+            <option value="evaluating">{t.demo.form.scheduleOptions["evaluating"]}</option>
           </select>
         </div>
       </div>
 
       <div className="space-y-2">
-        <Label htmlFor="comments">Comments</Label>
+        <Label htmlFor="comments">{t.demo.form.comments}</Label>
         <Textarea
           id="comments"
           rows={4}
           value={formData.comments}
           onChange={(e) => handleChange("comments", e.target.value)}
           className="bg-input border-border focus:border-primary/50 resize-none"
-          placeholder="Tell us about your needs..."
+          placeholder={t.demo.form.commentsPlaceholder}
         />
       </div>
 
@@ -157,7 +167,7 @@ export function DemoForm() {
           required
         />
         <Label htmlFor="privacy" className="text-sm leading-relaxed cursor-pointer">
-          I accept the privacy policy *
+          {t.demo.form.privacy} {t.demo.form.required}
         </Label>
       </div>
 
@@ -167,21 +177,19 @@ export function DemoForm() {
         disabled={isSubmitting}
         className="w-full gradient-primary text-lg hover:opacity-90 transition-all hover:scale-105 hover:shadow-xl hover:shadow-primary/50"
       >
-        {isSubmitting ? "Sending..." : "SCHEDULE FREE DEMONSTRATION"}
+        {isSubmitting ? t.demo.form.submitting : t.demo.form.submit}
       </Button>
 
       <div className="flex items-center justify-center gap-6 text-sm text-muted-foreground pt-4">
         <div className="flex items-center gap-2">
           <Lock className="h-4 w-4" />
-          <span>Your data is secure</span>
+          <span>{t.demo.form.securityNote}</span>
         </div>
         <span>•</span>
-        <span>Contact within 24h</span>
+        <span>{t.demo.form.contactTime}</span>
       </div>
 
-      <p className="text-center text-sm text-accent">
-        ⚠️ Due to high demand, limited slots for personalized demonstrations
-      </p>
+      
     </form>
   )
 }
