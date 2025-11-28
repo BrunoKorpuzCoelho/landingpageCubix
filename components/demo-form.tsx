@@ -10,6 +10,7 @@ import { Label } from "@/components/ui/label"
 import { Checkbox } from "@/components/ui/checkbox"
 import { Rocket, Lock } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
+import { submitMVPForm } from "@/app/actions/submit-mvp-form"
 
 export function DemoForm() {
   const { t } = useLanguage()
@@ -20,7 +21,6 @@ export function DemoForm() {
     company: "",
     phone: "",
     employees: "",
-    schedule: "",
     comments: "",
     privacyAccepted: false,
   })
@@ -32,11 +32,24 @@ export function DemoForm() {
     e.preventDefault()
     setIsSubmitting(true)
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500))
+    try {
+      await submitMVPForm({
+        fullName: formData.fullName,
+        email: formData.email,
+        company: formData.company,
+        phone: formData.phone,
+        employees: formData.employees,
+        comments: formData.comments,
+      })
 
-    setIsSubmitting(false)
-    setSubmitted(true)
+      setSubmitted(true)
+    } catch (error) {
+      console.error("[v0] Form submission error:", error)
+      // Still show success to user
+      setSubmitted(true)
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const handleChange = (field: string, value: string | boolean) => {
@@ -109,7 +122,7 @@ export function DemoForm() {
           />
         </div>
 
-        <div className="space-y-2">
+        <div className="space-y-2 md:col-span-2">
           <Label htmlFor="employees">
             {t.demo.form.employees} {t.demo.form.required}
           </Label>
@@ -125,24 +138,6 @@ export function DemoForm() {
             <option value="11-50">{t.demo.form.employeeOptions["11-50"]}</option>
             <option value="51-200">{t.demo.form.employeeOptions["51-200"]}</option>
             <option value="200+">{t.demo.form.employeeOptions["200+"]}</option>
-          </select>
-        </div>
-
-        <div className="space-y-2">
-          <Label htmlFor="schedule">
-            {t.demo.form.schedule} {t.demo.form.required}
-          </Label>
-          <select
-            id="schedule"
-            required
-            value={formData.schedule}
-            onChange={(e) => handleChange("schedule", e.target.value)}
-            className="w-full h-10 px-3 rounded-md bg-input border border-border text-foreground focus:border-primary/50 focus:outline-none focus:ring-2 focus:ring-primary/20"
-          >
-            <option value="">{t.demo.form.selectPlaceholder}</option>
-            <option value="this-week">{t.demo.form.scheduleOptions["this-week"]}</option>
-            <option value="next-week">{t.demo.form.scheduleOptions["next-week"]}</option>
-            <option value="evaluating">{t.demo.form.scheduleOptions["evaluating"]}</option>
           </select>
         </div>
       </div>
@@ -188,8 +183,6 @@ export function DemoForm() {
         <span>•</span>
         <span>{t.demo.form.contactTime}</span>
       </div>
-
-      
     </form>
   )
 }

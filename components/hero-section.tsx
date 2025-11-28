@@ -25,7 +25,7 @@ export function HeroSection() {
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gradient-to-r from-[#ED2009]/20 to-[#FF5B19]/20 rounded-full blur-[120px]"></div>
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="max-w-5xl mx-auto text-center space-y-8 animate-fade-in">
+        <div className="max-w-5xl mx-auto text-center space-y-8">
           <div className="flex items-center justify-center gap-2 mb-4">
             <div className="bg-gradient-to-r from-[#ED2009] to-[#FF5B19] p-[1px] rounded-full">
               <div className="bg-background px-4 py-1.5 rounded-full flex items-center gap-2">
@@ -35,7 +35,7 @@ export function HeroSection() {
             </div>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold leading-tight text-balance">
+          <h1 className="text-5xl md:text-7xl font-bold leading-tight text-balance text-foreground">
             {t.hero.title} <span className="gradient-text">{t.hero.titleHighlight}</span>
             {t.hero.titleEnd}
           </h1>
@@ -57,16 +57,11 @@ export function HeroSection() {
               size="lg"
               variant="outline"
               onClick={() => router.push("/under-construction")}
-              className="text-lg px-8 border-2 border-border hover:border-primary/50 hover:bg-primary/5 bg-transparent"
+              className="text-lg px-8 border-2 border-border hover:border-primary/50 hover:bg-primary/5 bg-transparent text-foreground"
             >
               <Play className="mr-2 h-5 w-5" />
               {t.hero.ctaSecondary}
             </Button>
-          </div>
-
-          {/* Hero Visual Placeholder */}
-          <div className="mt-16 relative">
-            
           </div>
         </div>
       </div>

@@ -316,16 +316,15 @@ export const translations = {
     },
     // Demo Section
     demo: {
-      title: "SCHEDULE YOUR FREE",
-      titleHighlight: "DEMONSTRATION",
-      subtitle: "See CUBIX in action and discover how AI can revolutionize your company's management",
+      title: "SIGN UP FOR FREE",
+      titleHighlight: "MVP ACCESS",
+      subtitle: "Join early adopters and be the first to experience CUBIX's AI-powered business management",
       form: {
         fullName: "Full Name",
         email: "Business Email",
         company: "Company",
         phone: "Phone",
         employees: "Number of Employees",
-        schedule: "When would you like to schedule?",
         comments: "Comments",
         commentsPlaceholder: "Tell us about your needs...",
         privacy: "I accept the privacy policy",
@@ -339,19 +338,14 @@ export const translations = {
           "51-200": "51-200",
           "200+": "200+",
         },
-        scheduleOptions: {
-          "this-week": "This week",
-          "next-week": "Next week",
-          evaluating: "Still evaluating",
-        },
         securityNote: "Your data is secure",
         contactTime: "Contact within 24h",
-        alert: "⚠️ Due to high demand, limited slots for personalized demonstrations",
+        alert: "⚠️ Limited MVP slots available - early adopters get exclusive benefits",
       },
       success: {
-        title: "Thank You!",
+        title: "Welcome to CUBIX MVP!",
         message:
-          "We've received your request. Our team will contact you within 24 hours to schedule your personalized demonstration.",
+          "Thank you for signing up! You'll receive detailed information about our Alpha, Beta, and MVP programs. Our team will contact you within 24 hours with program details and next steps.",
       },
     },
     // FAQ Section
@@ -766,86 +760,80 @@ export const translations = {
     },
     // Demo Section
     demo: {
-      title: "AGENDE A SUA",
-      titleHighlight: "DEMONSTRAÇÃO GRATUITA",
-      subtitle: "Veja o CUBIX em ação e descubra como a IA pode revolucionar a gestão da sua empresa",
+      title: "INSCREVA-SE GRATUITAMENTE",
+      titleHighlight: "ACESSO AO MVP",
+      subtitle: "Junte-se aos early adopters e seja o primeiro a experimentar a gestão empresarial com IA do CUBIX",
       form: {
         fullName: "Nome Completo",
         email: "Email Empresarial",
         company: "Empresa",
         phone: "Telefone",
         employees: "Número de Funcionários",
-        schedule: "Quando gostaria de agendar?",
         comments: "Comentários",
         commentsPlaceholder: "Conte-nos sobre as suas necessidades...",
         privacy: "Aceito a política de privacidade",
         submit: "Inscrever-se no Seu MVP Gratuito",
         submitting: "A enviar...",
         required: "*",
-        selectPlaceholder: "Selecionar...",
+        selectPlaceholder: "Selecione...",
         employeeOptions: {
           "1-10": "1-10",
           "11-50": "11-50",
           "51-200": "51-200",
           "200+": "200+",
         },
-        scheduleOptions: {
-          "this-week": "Esta semana",
-          "next-week": "Próxima semana",
-          evaluating: "Ainda a avaliar",
-        },
         securityNote: "Os seus dados estão seguros",
-        contactTime: "Contacto em 24h",
-        alert: "⚠️ Devido à elevada procura, vagas limitadas para demonstrações personalizadas",
+        contactTime: "Contacto dentro de 24 horas",
+        alert: "⚠️ Slots limitados de MVP disponíveis - os adoptantes antecipados obtêm benefícios exclusivos",
       },
       success: {
-        title: "Obrigado!",
+        title: "Bem-vindo ao MVP do CUBIX!",
         message:
-          "Recebemos o seu pedido. A nossa equipa entrará em contacto consigo dentro de 24 horas para agendar a sua demonstração personalizada.",
+          "Obrigado por se inscrever! Irá receber informações detalhadas sobre os nossos programas Alpha, Beta e MVP. A nossa equipa contactará o dentro de 24 horas com detalhes do programa e os próximos passos.",
       },
     },
     // FAQ Section
     faq: {
       title: "PERGUNTAS",
-      titleHighlight: "FREQUENTES",
+      titleHighlight: "MAIS FREQUENTES",
       items: [
         {
-          question: "O CUBIX realmente funciona sem consultores?",
+          question: "O CUBIX funciona realmente sem consultores?",
           answer:
-            "O CUBIX não requer consultores para implementação, ao contrário dos ERPs tradicionais. Oferecemos serviços de consultoria opcionais se preferir contacto humano, mas também temos inteligência artificial integrada que pode responder a qualquer pergunta da melhor forma possível. Esta é uma vantagem competitiva porque a consultoria é opcional, não obrigatória. As empresas podem poupar dinheiro usando a IA integrada em vez de pagar taxas caras de consultoria.",
+            "O CUBIX não requer consultores para implementação, ao contrário dos ERPs tradicionais. Oferecemos serviços de consultoria opcionais se preferir contacto humano, mas também temos inteligência artificial integrada que pode responder a qualquer pergunta da melhor forma possível. Esta é uma vantagem competitiva porque a consultoria é opcional, não obrigatória. As empresas podem poupar dinheiro ao usar a IA incorporada em vez de pagar por taxas caras de consultoria.",
         },
         {
-          question: "Se eu quiser mudar de um ERP que já tenho para o CUBIX, quais são as minhas vantagens?",
+          question: "Se quero mudar do ERP que já tenho para o CUBIX, quais são as minhas vantagens?",
           answer:
-            "Temos um sistema que pode funcionar simultaneamente com o seu ERP existente, permitindo-lhe testar o CUBIX ao mesmo tempo. Todos os dados criados tanto no CUBIX como no seu outro ERP são partilhados entre os dois sistemas. Capturamos todos os dados de ambos os lados e sincronizamos automaticamente. Por exemplo, crie uma fatura em qualquer sistema e ela aparece em ambos. O seu ERP precisa ser compatível com webhook ou ligações API para esta integração. Desta forma, pode testar o CUBIX completamente antes de migrar totalmente.",
+            "Temos um sistema que pode funcionar simultaneamente com o seu ERP existente, permitindo-lhe testar o CUBIX ao mesmo tempo. Todos os dados criados tanto no CUBIX quanto no seu outro ERP são partilhados entre os dois sistemas. Capturamos todos os dados de ambos os lados e sincronizamos-os automaticamente. Por exemplo, crie uma fatura em qualquer um dos sistemas e ela aparece em ambos. O seu ERP precisa de ser compatível com conexões webhook ou API para esta integração. Deste modo, pode testar o CUBIX completamente antes de migrar totalmente.",
         },
         {
-          question: "Como funciona a IA local vs IA central?",
+          question: "Como funciona a IA local vs central?",
           answer:
-            "O CUBIX usa um sistema único de escalamento baseado em confiança de 4 camadas. Consultas simples (70%) são tratadas pela IA Local (<100ms). Problemas mais complexos escalam para IA de Suporte, depois IA Central e finalmente IA DevOps para correções ao nível do código. Isto garante tempo de resposta ideal mantendo alta precisão.",
+            "O CUBIX utiliza um sistema único de escalamento de quatro camadas baseado em confiança. Consultas simples (70%) são tratadas pela IA Local (<100ms). Problemas mais complexos escalam para a IA de Suporte, depois para a IA Central e, finalmente, para a IA DevOps para correções de nível de código. Isto garante um tempo de resposta óptimo enquanto mantém uma alta precisão.",
         },
         {
-          question: "Quanto tempo demora a implementação?",
+          question: "Quanto tempo leva a implementação?",
           answer:
-            "A implementação é significativamente mais rápida do que os ERPs tradicionais. A configuração básica pode ser concluída em dias, não meses. A IA ajuda na migração de dados, configuração e formação de utilizadores. A maioria das empresas fica operacional em 2-4 semanas, em comparação com 6-12 meses para sistemas legados.",
+            "A implementação é significativamente mais rápida do que os ERPs tradicionais. A configuração básica pode ser concluída em dias, não em meses. A IA assiste na migração de dados, configuração e treino de utilizadores. A maioria das empresas está operacional dentro de 2-4 semanas, em comparação com 6-12 meses para sistemas legados.",
         },
         {
           question: "Os meus dados estão seguros?",
           answer:
-            "Absolutamente. O CUBIX segue padrões de segurança empresariais com encriptação ponta a ponta, controlo de acesso baseado em funções e auditorias de segurança regulares. Oferecemos opções de implementação na nuvem e local. Todo o processamento de IA respeita a privacidade dos seus dados e nunca treinamos com as suas informações proprietárias.",
+            "Absolutamente. O CUBIX segue padrões de segurança empresariais com encriptação de ponta a ponta, controlo de acesso baseado em funções e auditorias de segurança regulares. Oferecemos opções de implementação em nuvem e no local. Todas as operações de IA respeitam a privacidade dos seus dados e nunca treinamos em informações proprietárias.",
         },
         {
           question: "Posso integrar com sistemas existentes?",
           answer:
-            "Sim, o CUBIX oferece uma API REST abrangente e suporta protocolos de integração padrão. A nossa IA pode ajudar a mapear e migrar dados de sistemas existentes incluindo SAP, Oracle, Odoo e soluções personalizadas. Também fornecemos conectores pré-construídos para ferramentas de negócio comuns.",
+            "Sim, o CUBIX oferece uma API REST abrangente e apoia protocolos de integração padrão. A IA pode ajudar a mapear e migrar dados dos seus sistemas existentes, incluindo SAP, Oracle, Odoo e soluções personalizadas. Também fornecemos conectores pré-construídos para ferramentas de negócio comuns.",
         },
         {
-          question: "Qual é a diferença vs SAP/Oracle/Odoo?",
+          question: "Qual é a diferença em relação ao SAP/Oracle/Odoo?",
           answer:
-            "Os ERPs tradicionais adicionam IA como um assistente - ainda requer intervenção humana. O CUBIX tem IA no seu núcleo estrutural, permitindo verdadeira autonomia. Alcançamos 90% de operação autónoma, resposta de suporte <1 segundo, MTTR de 30 minutos vs mais de 4 horas, e eliminamos completamente os custos de consultoria.",
+            "Os ERPs tradicionais colam a IA como um assistente - ainda requer intervenção humana. O CUBIX tem IA no seu núcleo estrutural, permitindo verdadeira autonomia. Conseguimos 90% de operações autónomas, suporte de <1 segundo, MTTR de 30 minutos vs 4+ horas e eliminamos totalmente os custos de consultoria.",
         },
       ],
-      cta: "Ainda tem dúvidas? Contacte-nos",
+      cta: "Ainda tem perguntas? Contacte-nos",
     },
     // Footer
     footer: {
@@ -859,7 +847,7 @@ export const translations = {
       company: {
         title: "EMPRESA",
         about: "Sobre Nós",
-        blog: "Blogue",
+        blog: "Blog",
         careers: "Carreiras",
       },
       legal: {
@@ -872,16 +860,16 @@ export const translations = {
     },
     // Construction Banner
     banner: {
-      message: "🚧 Esta página está atualmente em desenvolvimento. Funcionalidades e conteúdo podem mudar.",
+      message: "🚧 Esta página está atualmente em desenvolvimento. As funcionalidades e o conteúdo podem mudar.",
     },
     underConstruction: {
       title: "PÁGINA EM",
       titleHighlight: "CONSTRUÇÃO",
-      subtitle: "Estamos a trabalhar arduamente para lhe trazer esta funcionalidade",
+      subtitle: "Estamos a trabalhar arduamente para trazer-lhe esta funcionalidade",
       message:
         "Esta página está atualmente em desenvolvimento. A plataforma CUBIX está em construção e novas funcionalidades estão a ser adicionadas regularmente. Obrigado pela sua paciência enquanto construímos o futuro dos sistemas ERP autónomos.",
       eta: "Conclusão esperada: Q1 2026",
-      backHome: "Voltar ao Início",
+      backHome: "Voltar para Início",
       signUpMVP: "Inscrever-se no MVP",
     },
   },
@@ -892,19 +880,19 @@ export const translations = {
       product: "Producto",
       technology: "Tecnología",
       contact: "Contacto",
-      signUpMVP: "Registrarse para el MVP",
+      signUpMVP: "Registrarse para MVP",
     },
     // Hero Section
     hero: {
-      patentBadge: "ARQUITETURA PATENTADA",
+      patentBadge: "ARQUITECTURA PATENTADA",
       title: "EL PRIMER ERP CON IA QUE",
       titleHighlight: "FUNCIONA AUTÓNOMAMENTE",
       titleEnd: ", NO SOLO ASISTE",
       subtitle: "90% de Autonomía",
-      subtitleFeatures: "Corrección Automática de Errores • Soporte Instantáneo 24/7 • Cero Consultores",
-      ctaPrimary: "Registrarse para el MVP gratuito",
+      subtitleFeatures: "Auto-Reparación de Bugs • Soporte Instantáneo 24/7 • Sin Consultores",
+      ctaPrimary: "Registrarse para MVP gratuito",
       ctaSecondary: "Ver Cómo Funciona",
-      imageAlt: "Panel CUBIX ERP",
+      imageAlt: "Panel de CUBIX ERP",
     },
     // Problem Section
     problem: {
@@ -912,10 +900,10 @@ export const translations = {
       titleHighlight: "OBSOLETOS",
       painPoints: [
         { title: "Soporte basado en tickets", description: "Días de espera para correcciones simples" },
-        { title: "Resolución de errores", description: "Más de 4 horas por incidente" },
-        { title: "Consultores caros", description: "100-200€/hora de costes continuos" },
+        { title: "Resolución de bugs", description: "Más de 4 horas por incidente" },
+        { title: "Consultores caros", description: "Costos continuos de €100-200/hora" },
         { title: "IA como complemento", description: "Sin autonomía real, solo asistencia" },
-        { title: "Cero optimización proactiva", description: "Sistemas reactivos, no predictivos" },
+        { title: "Sin optimización proactiva", description: "Sistemas reactivos, no predictivos" },
       ],
       quote:
         "SAP, Oracle, Odoo... tienen IA. Pero es un ASISTENTE que necesita humanos. Tenemos un AGENTE que funciona autónomamente.",
@@ -925,42 +913,42 @@ export const translations = {
       title: "CUBIX:",
       titleHighlight: "IA ESTRUCTURAL",
       titleEnd: ", NO COMPLEMENTO",
-      subtitle: "Construido desde cero con IA en su núcleo, no como un complemento añadido",
+      subtitle: "Construido desde cero con IA en su núcleo, no como un complemento",
       features: [
         {
           title: "90% de Autonomía",
-          description: "La IA gestiona operaciones de extremo a extremo sin intervención humana",
+          description: "La IA maneja operaciones de principio a fin sin intervención humana",
         },
         {
-          title: "Errores se Autocorrigen",
+          title: "Los Bugs Se Auto-Reparan",
           description: "Sistema auto-reparador detecta y resuelve problemas automáticamente",
         },
         { title: "Soporte 24/7 <1seg", description: "Respuestas instantáneas de IA, sin tickets, sin espera" },
-        { title: "Cero Consultores", description: "Ahorre 100-200€/hora con operaciones autónomas" },
-        { title: "MTTR: 30min vs 4h", description: "8x más rápido en tiempo medio de resolución" },
-        { title: "Sistema Auto-Evolutivo", description: "Aprende y optimiza continuamente a partir de sus datos" },
+        { title: "Sin Consultores", description: "Ahorre €100-200/hora con operaciones autónomas" },
+        { title: "MTTR: 30min vs 4h", description: "8 veces más rápido en tiempo medio de resolución" },
+        { title: "Sistema Auto-Evolucionario", description: "Aprende y optimiza continuamente a partir de sus datos" },
       ],
     },
     // Architecture Section
     architecture: {
       title: "ARQUITECTURA",
-      titleHighlight: "IA DE 4 CAPAS MULTINIVEL",
-      subtitle: "Sistema de escalado basado en confianza enruta consultas a la capa óptima de IA",
+      titleHighlight: "MULTICAPA DE IA DE 4 NIVELES",
+      subtitle: "Sistema de escalada basado en confianza enruta consultas a la capa óptima de IA",
       layers: [
         {
           name: "IA LOCAL",
           model: "DeepSeek R1 8B",
-          description: "70% de consultas resueltas localmente, <100ms tiempo de respuesta",
+          description: "70% de consultas resueltas localmente, tiempo de respuesta <100ms",
         },
         {
           name: "IA DE SOPORTE",
           model: "Llama 3.2 11B",
-          description: "Análisis especializado 24/7, sin tickets necesarios",
+          description: "Análisis especializado 24/7, sin necesidad de tickets",
         },
         {
           name: "IA CENTRAL",
           model: "Llama 3.3 70B",
-          description: "Optimización compleja de errores y decisiones del sistema",
+          description: "Optimización compleja de bugs y decisiones a nivel de sistema",
         },
         {
           name: "IA DEVOPS",
@@ -982,47 +970,47 @@ export const translations = {
       features: [
         { feature: "IA nativa en el núcleo" },
         { feature: "Autonomía total (90%)" },
-        { feature: "Errores auto-reparadores" },
+        { feature: "Bugs auto-reparadores" },
         { feature: "Soporte instantáneo (<1seg)" },
-        { feature: "Cero consultores necesarios" },
+        { feature: "Sin consultores necesarios" },
         { feature: "Tiempo de respuesta", traditional: "Horas/Días", cubix: "<1 segundo" },
         { feature: "Tiempo medio de reparación", traditional: "Más de 4 horas", cubix: "30 minutos" },
       ],
     },
     // Modules Section
     modules: {
-      title: "MÓDULOS",
-      titleHighlight: "INCLUIDOS EN EL MVP",
-      subtitle: "Características esenciales listas para el lanzamiento de su negocio",
+      title: "MVP",
+      titleHighlight: "MÓDULOS INCLUIDOS",
+      subtitle: "Características principales listas para el lanzamiento de su negocio",
       items: [
         { name: "CRM y Leads", description: "Gestión de relaciones con clientes y seguimiento de leads" },
         { name: "Ventas y Facturación", description: "Ciclo completo de ventas y facturación automatizada" },
-        { name: "Pedidos de Compra", description: "Aprovisionamiento y gestión de proveedores" },
-        { name: "Gestión de Inventario", description: "Control de stock en tiempo real y almacenamiento" },
-        { name: "Contabilidad", description: "Gestión financiera completa e informes" },
-        { name: "Informes con IA", description: "Análisis inteligente y previsiones" },
+        { name: "Pedidos de Compra", description: "Adquisición y gestión de proveedores" },
+        { name: "Gestión de Inventario", description: "Control de stock en tiempo real y almacenes" },
+        { name: "Contabilidad", description: "Gestión financiera completa y informes" },
+        { name: "Informes con IA", description: "Análisis inteligentes y pronósticos" },
         { name: "Flujos Automatizados", description: "Automatización personalizada de procesos de negocio" },
         { name: "Permisos y Seguridad", description: "Acceso basado en roles y protección de datos" },
         { name: "Multi-idioma", description: "Soporte internacional y localización" },
       ],
-      note: "Estos 9 módulos principales están incluidos en el MVP. El producto final contará con más de 70 módulos completos.",
+      note: "Estos 9 módulos principales están incluidos en el MVP. El producto final tendrá más de 70 módulos abrangentes.",
     },
     // Roadmap Section
     roadmap: {
-      title: "HOJA DE RUTA:",
-      titleHighlight: "12-16 MESES PARA COMPLETAR EL MVP",
-      subtitle: "Cronograma de desarrollo estructurado con ejecución paralela",
+      title: "RUTA:",
+      titleHighlight: "12-16 MESES PARA COMPLETAR MVP",
+      subtitle: "Línea de tiempo estructurada con ejecución paralela",
       timeline: {
-        title: "Cronograma de Lanzamiento del Producto",
+        title: "Línea de Tiempo de Lanzamiento del Producto",
         closedAlpha: {
           date: "15 de Mayo de 2026",
-          label: "ALPHA CERRADO",
-          description: "Acceso limitado para probadores iniciales",
+          label: "ALFA CERRADO",
+          description: "Acceso limitado para pruebas iniciales",
         },
         openBeta: {
           date: "1 de Agosto de 2026",
-          label: "BETA ABIERTO",
-          description: "Comienza la fase de pruebas públicas",
+          label: "BETA ABIERTA",
+          description: "Fase de pruebas públicas comienza",
         },
         mvp: {
           date: "1 de Enero de 2027",
@@ -1039,7 +1027,7 @@ export const translations = {
             "Base completa del sistema",
             "Base de datos y ORM",
             "Autenticación y Seguridad",
-            "Vistas e IU",
+            "Vistas y UI",
             "API REST",
             "IA Nativa",
           ],
@@ -1075,35 +1063,35 @@ export const translations = {
           features: ["Módulo de Contabilidad Completo", "Gestión Financiera", "Informes Avanzados"],
         },
       ],
-      note: "Desarrollo paralelo después de la Fase 1 acelera el tiempo hasta el mercado",
+      note: "Desarrollo paralelo después de la Fase 1 acelera el tiempo al mercado",
     },
     // Tech Stack Section
     techStack: {
       title: "CONSTRUIDO CON",
-      titleHighlight: "TECNOLOGÍA DE VANGUARDIA",
-      patentTitle: "ARQUITETURA PATENTADA",
-      quote: "Sistema único de escalado basado en confianza",
+      titleHighlight: "TECNOLOGÍA DE PUNTA",
+      patentTitle: "ARQUITECTURA PATENTADA",
+      quote: "Sistema único de escalada basado en confianza",
       metrics: [
         "Más de 150.000 líneas de código",
         "16 módulos de análisis autónomos",
         "Más de 100 funciones de análisis inteligente",
       ],
       badge: "Código Abierto y Privacidad Primero",
-      dateNote: "Funciones implementadas al 27 de Noviembre de 2025",
+      dateNote: "Características implementadas el 27 de Noviembre de 2025",
     },
     earlyAccess: {
-      title: "ÚNETE A NUESTRO",
-      titleHighlight: "PROGRAMA DE ACCESO ANTICIPADO",
-      subtitle: "Sé de los primeros en experimentar CUBIX y dar forma a su futuro",
+      title: "ÚNASE A NUESTRO",
+      titleHighlight: "PROGRAMA DE ACCESO PRONTO",
+      subtitle: "Sea uno de los primeros en experimentar CUBIX y moldear su futuro",
       tiers: [
         {
-          name: "ALPHA CERRADO",
+          name: "ALFA CERRADO",
           date: "15 de Mayo de 2026",
           badge: "Plazas Limitadas",
           features: [
             "Acceso exclusivo en primera mano",
             "Comunicación directa con desarrolladores",
-            "Influir en la dirección del producto",
+            "Influenciar la dirección del producto",
             "Acceso automático a Beta",
           ],
         },
@@ -1112,50 +1100,50 @@ export const translations = {
           date: "1 de Agosto de 2026",
           badge: "Prueba Pública",
           features: [
-            "Acceso anticipado a funcionalidades",
-            "Reporte prioritario de errores",
+            "Acceso anticipado a características",
+            "Reporte prioritario de bugs",
             "Foro de feedback de la comunidad",
             "Experiencia lista para producción",
           ],
         },
       ],
       benefits: {
-        title: "Beneficios para Probadores Anticipados",
+        title: "Beneficios para Pruebaadores Tempranos",
         items: [
           {
             icon: "Gift",
             title: "Descuentos Exclusivos",
             description:
-              "Probadores Alpha reciben 30% de descuento en los primeros 2 años. Probadores Beta reciben 10% de descuento en el primer año.",
+              "Los testadores Alpha obtienen un 30% de descuento en los primeros 2 años. Los testadores Beta obtienen un 10% de descuento en el primer año.",
           },
           {
             icon: "Zap",
             title: "Soporte Prioritario",
             description:
-              "Canal de soporte dedicado con tiempos de respuesta más rápidos para todos los probadores anticipados.",
+              "Canal de soporte dedicado con tiempos de respuesta más rápidos para todos los testadores tempranos.",
           },
           {
             icon: "Trophy",
-            title: "Estatus de Fundador",
-            description: "Reconocido como usuario fundador con insignia exclusiva y beneficios de por vida.",
+            title: "Estado de Fundador",
+            description: "Reconocido como usuario fundador con distintivo exclusivo y beneficios vitales.",
           },
           {
             icon: "Target",
-            title: "Dar Forma al Producto",
-            description: "Tu feedback influye directamente en las funcionalidades y prioridades del roadmap.",
+            title: "Moldar el Producto",
+            description: "Su feedback influye directamente en las características y prioridades de la ruta.",
           },
         ],
-        note: "Los descuentos solo se aplican a planes de pago anual o de 2 años (no disponibles para facturación mensual). Los probadores Alpha deben comprometerse con el plan de 2 años para recibir el 30% de descuento. Los probadores Beta deben comprometerse con el plan anual para recibir el 10% de descuento. Los descuentos se aplican a participantes activos que proporcionan feedback significativo.",
+        note: "Los descuentos solo aplican a planes de pago anuales o de 2 años (no disponibles para facturación mensual). Los testadores Alpha deben comprometerse con el plan de 2 años para recibir un 30% de descuento. Los testadores Beta deben comprometerse con el plan anual para recibir un 10% de descuento. Los descuentos aplican a participantes activos que proporcionan feedback significativo.",
       },
       cta: {
-        alpha: "Solicitar Alpha Cerrado",
-        beta: "Inscribirse en Beta",
+        alpha: "Postularse para Alpha Cerrado",
+        beta: "Registrarse en Beta",
       },
     },
     // TEAM SECTION
     team: {
-      title: "CONOCE AL",
-      titleHighlight: "EQUIPO DE DESARROLLO",
+      title: "CONOZCA A LA",
+      titleHighlight: "EQUIPA DE DESARROLLO",
       subtitle: "Ingenieros experimentados construyendo el futuro de los sistemas ERP autónomos",
       members: [
         {
@@ -1164,140 +1152,135 @@ export const translations = {
             "CTO/CPO",
             "Ingeniero de IA / Ingeniero de ML",
             "Científico de Datos / Arquitecto de BD",
-            "Ingeniero Full-Stack",
+            "Desarrollador Full-Stack",
           ],
           experience: "Más de 2 años",
           yearJoined: "Desde 2023",
-          bio: "Desarrollador full-stack especializado en integración de IA y sistemas empresariales. Lidera el desarrollo de la arquitectura autónoma de CUBIX.",
+          bio: "Desarrollador full-stack especializado en integración de IA y sistemas empresariais. Lidera el desarrollo de la arquitectura autónoma de CUBIX.",
           photo: "/bruno-profile.png",
           github: "https://github.com/BrunoKorpuzCoelho",
           linkedin: "https://www.linkedin.com/in/bruno-coelho-aa4071212/",
         },
       ],
-      learnMore: "Saber Más",
-      cta: "Únete a Nuestro Equipo",
+      learnMore: "Aprender Más",
+      cta: "Únete a Nuestra Equipo",
     },
     // Pricing Section
     pricing: {
-      title: "PLANES",
+      title: "PLANOS",
       titleHighlight: "FLEXIBLES",
       titleEnd: "PARA SU NEGOCIO",
-      subtitle: "Todos los planes incluyen 3 usuarios base. Escale a usuarios ilimitados ajustando la cuota mensual.",
+      subtitle:
+        "Todos los planes incluyen 3 usuarios base. Escala hasta usuarios ilimitados ajustando la tarifa mensual.",
       tiers: [
         {
           name: "SaaS",
           subtitle: "Infraestructura Compartida",
           features: [
             "Base: 3 usuarios incluidos",
-            "Escala a usuarios ilimitados",
+            "Escala hasta usuarios ilimitados",
             "Todos los módulos incluidos",
             "Soporte completo",
             "Actualizaciones mensuales",
             "IA de Soporte (3 capas: Soporte, Central, DevOps)",
-            "Sin IA estructural (entorno compartido)",
+            "Sin IA estructural (ambiente compartido)",
           ],
         },
         {
-          name: "SERVER HOSTING",
+          name: "HOSTING DE SERVIDOR",
           subtitle: "VPS Dedicado",
           features: [
             "Base: 3 usuarios incluidos",
-            "Escala a usuarios ilimitados",
+            "Escala hasta usuarios ilimitados",
             "Todos los módulos incluidos",
             "Soporte completo",
             "Actualizaciones mensuales",
             "Desarrollo personalizado disponible",
-            "IA Estructural (Las 4 capas de IA incluyendo Local)",
+            "IA Estructural (Todas las 4 capas de IA incluyendo Local)",
             "Recursos de servidor dedicados",
           ],
         },
       ],
-      cta: "Contáctenos",
+      cta: "Contacte-nos",
       alert:
-        "El MVP incluye las capas IA Local y IA Central. Las capas IA DevOps e IA de Soporte se agregarán en el lanzamiento del producto final. Hasta entonces, la capa IA Central maneja las operaciones DevOps y tiene capacidad total para hacerlo.",
+        "El MVP incluye las capas IA Local y IA Central. Las capas IA DevOps y IA de Soporte serán agregadas en el lanzamiento completo del producto. Hasta entonces, la capa IA Central maneja operaciones DevOps y tiene capacidad total para hacerlo.",
     },
     // Demo Section
     demo: {
-      title: "PROGRAME SU",
-      titleHighlight: "DEMOSTRACIÓN GRATUITA",
-      subtitle: "Vea CUBIX en acción y descubra cómo la IA puede revolucionar la gestión de su empresa",
+      title: "INSCRIVEZ-VOUS GRATUITEMENT",
+      titleHighlight: "ACCÈS AU MVP",
+      subtitle: "Rejoignez les early adopters et soyez le premier à découvrir la gestion d'entreprise avec IA de CUBIX",
       form: {
-        fullName: "Nombre Completo",
-        email: "Email Empresarial",
-        company: "Empresa",
-        phone: "Teléfono",
-        employees: "Número de Empleados",
-        schedule: "¿Cuándo le gustaría programar?",
-        comments: "Comentarios",
-        commentsPlaceholder: "Cuéntenos sobre sus necesidades...",
-        privacy: "Acepto la política de privacidad",
-        submit: "Registrarse para Su MVP Gratuito",
-        submitting: "Enviando...",
+        fullName: "Nom Complet",
+        email: "Email Professionnel",
+        company: "Entreprise",
+        phone: "Téléphone",
+        employees: "Nombre d'Employés",
+        comments: "Commentaires",
+        commentsPlaceholder: "Parlez-nous de vos besoins...",
+        privacy: "J'accepte la politique de confidentialité",
+        submit: "S'inscrire pour Votre MVP Gratuit",
+        submitting: "Envoi...",
         required: "*",
-        selectPlaceholder: "Seleccionar...",
+        selectPlaceholder: "Sélectionner...",
         employeeOptions: {
           "1-10": "1-10",
           "11-50": "11-50",
           "51-200": "51-200",
           "200+": "200+",
         },
-        scheduleOptions: {
-          "this-week": "Esta semana",
-          "next-week": "Próxima semana",
-          evaluating: "Aún evaluando",
-        },
-        securityNote: "Sus datos están seguros",
-        contactTime: "Contacto en 24h",
-        alert: "⚠️ Debido a la alta demanda, plazas limitadas para demostraciones personalizadas",
+        securityNote: "Vos données sont sécurisées",
+        contactTime: "Contact sous 24h",
+        alert: "⚠️ Places limitées pour le MVP - les early adopters reçoivent des avantages exclusifs",
       },
       success: {
-        title: "¡Gracias!",
+        title: "¡Bienvenido al MVP de CUBIX!",
         message:
-          "Hemos recibido su solicitud. Nuestro equipo se pondrá en contacto con usted dentro de 24 horas para programar su demostración personalizada.",
+          "¡Gracias por registrarte! Recibirás información detallada sobre nuestros programas Alpha, Beta y MVP. Nuestro equipo se pondrá en contacto contigo en 24 horas con los detalles del programa y los próximos pasos.",
       },
     },
     // FAQ Section
     faq: {
       title: "PREGUNTAS",
-      titleHighlight: "FRECUENTES",
+      titleHighlight: "MÁS FRECUENTES",
       items: [
         {
-          question: "¿CUBIX realmente funciona sin consultores?",
+          question: "¿Realmente funciona CUBIX sin consultores?",
           answer:
-            "CUBIX no requiere consultores para la implementación, a diferencia de los ERPs tradicionales. Ofrecemos servicios de consultoría opcionales si prefiere contacto humano, pero también tenemos inteligencia artificial integrada que puede responder cualquier pregunta de la mejor manera posible. Esta es una ventaja competitiva porque la consultoría es opcional, no obligatoria. Las empresas pueden ahorrar dinero usando la IA integrada en lugar de pagar costosas tarifas de consultoría.",
+            "CUBIX no requiere consultores para la implementación, a diferencia de los ERPs tradicionales. Ofrecemos servicios de consultoría opcionales si prefiere contacto humano, pero también tenemos inteligencia artificial integrada que puede responder a cualquier pregunta de la mejor manera posible. Esta es una ventaja competitiva porque la consultoría es opcional, no obligatoria. Las empresas pueden ahorrar dinero usando la IA incorporada en lugar de pagar por costosas tarifas de consultoría.",
         },
         {
           question: "Si quiero cambiar de un ERP que ya tengo a CUBIX, ¿cuáles son mis ventajas?",
           answer:
-            "Tenemos un sistema que puede funcionar simultáneamente con su ERP existente, permitiéndole probar CUBIX al mismo tiempo. Todos los datos creados tanto en CUBIX como en su otro ERP se comparten entre los dos sistemas. Capturamos todos los datos de ambos lados y sincronizamos automáticamente. Por ejemplo, cree una factura en cualquier sistema y aparece en ambos. Su ERP necesita ser compatible con webhook o conexiones API para esta integración. De esta manera, puede probar CUBIX completamente antes de migrar totalmente.",
+            "Tenemos un sistema que puede run simultáneamente con su ERP existente, permitiéndole probar CUBIX al mismo tiempo. Todos los datos creados tanto en CUBIX como en su otro ERP se comparten entre los dos sistemas. Capturamos todos los datos de ambos lados y sincronizamoslos automáticamente. Por ejemplo, cree una factura en cualquier sistema y aparecerá en ambos. Su ERP necesita ser compatible con conexiones webhook o API para esta integración. De esta manera, puede probar CUBIX completamente antes de migrar totalmente.",
         },
         {
-          question: "¿Cómo funciona la IA local vs IA central?",
+          question: "¿Cómo funciona la IA local vs central?",
           answer:
-            "CUBIX utiliza un sistema único de escalado basado en confianza de 4 capas. Las consultas simples (70%) son manejadas por IA Local (<100ms). Los problemas más complejos escalan a IA de Soporte, luego IA Central y finalmente IA DevOps para correcciones a nivel de código. Esto garantiza un tiempo de respuesta óptimo manteniendo alta precisión.",
+            "CUBIX utiliza un sistema único de escalada de cuatro capas basado en confianza. Consultas simples (70%) se manejan por IA Local (<100ms). Problemas más complejos escalan a IA de Soporte, luego a IA Central y finalmente a IA DevOps para correcciones de nivel de código. Esto garantiza un tiempo de respuesta óptimo mientras mantiene una alta precisión.",
         },
         {
-          question: "¿Cuánto tiempo tarda la implementación?",
+          question: "¿Cuánto tiempo lleva la implementación?",
           answer:
-            "La implementación es significativamente más rápida que los ERPs tradicionales. La configuración básica puede completarse en días, no meses. La IA ayuda con la migración de datos, configuración y capacitación de usuarios. La mayoría de las empresas están operativas en 2-4 semanas, en comparación con 6-12 meses para sistemas heredados.",
+            "La implementación es significativamente más rápida que los ERPs tradicionales. La configuración básica se puede completar en días, no en meses. La IA asiste en la migración de datos, configuración y capacitación de usuarios. La mayoría de las empresas están operativas dentro de 2-4 semanas, en comparación con 6-12 meses para sistemas legados.",
         },
         {
           question: "¿Mis datos están seguros?",
           answer:
-            "Absolutamente. CUBIX sigue estándares de seguridad empresariales con cifrado de extremo a extremo, control de acceso basado en roles y auditorías de seguridad regulares. Ofrecemos opciones de implementación en la nube y local. Todo el procesamiento de IA respeta la privacidad de sus datos y nunca entrenamos con su información propietaria.",
+            "Absolutamente. CUBIX sigue estándares de seguridad empresariales con encriptación de principio a fin, control de acceso basado en roles y auditorías de seguridad regulares. Ofrecemos opciones de implementación en la nube y en local. Todas las operaciones de IA respetan la privacidad de sus datos y nunca entrenamos en información propiedad.",
         },
         {
           question: "¿Puedo integrar con sistemas existentes?",
           answer:
-            "Sí, CUBIX ofrece una API REST completa y soporta protocolos de integración estándar. Nuestra IA puede ayudar a mapear y migrar datos de sistemas existentes incluyendo SAP, Oracle, Odoo y soluciones personalizadas. También proporcionamos conectores preconstruidos para herramientas de negocio comunes.",
+            "Sí, CUBIX ofrece una API REST abrangente y soporta protocolos de integración estándar. La IA puede ayudar a mapear y migrar datos de sus sistemas existentes, incluyendo SAP, Oracle, Odoo y soluciones personalizadas. También proporcionamos conectores pre-construidos para herramientas de negocio comunes.",
         },
         {
-          question: "¿Cuál es la diferencia vs SAP/Oracle/Odoo?",
+          question: "¿Cuál es la diferencia con SAP/Oracle/Odoo?",
           answer:
-            "Los ERPs tradicionales añaden IA como un asistente - todavía requiere intervención humana. CUBIX tiene IA en su núcleo estructural, permitiendo verdadera autonomía. Logramos 90% de operación autónoma, respuesta de soporte <1 segundo, MTTR de 30 minutos vs más de 4 horas, y eliminamos completamente los costes de consultoría.",
+            "Los ERPs tradicionales colan IA como un asistente - aún requiere intervención humana. CUBIX tiene IA en su núcleo estructural, permitiendo verdadera autonomía. Logramos 90% de operaciones autónomas, respuesta de soporte de <1 segundo, MTTR de 30 minutos vs 4+ horas y eliminamos completamente los costos de consultoría.",
         },
       ],
-      cta: "¿Todavía tiene preguntas? Contáctenos",
+      cta: "¿Todavía tiene preguntas? Contacte con nosotros",
     },
     // Footer
     footer: {
@@ -1310,9 +1293,9 @@ export const translations = {
       },
       company: {
         title: "EMPRESA",
-        about: "Sobre Nosotros",
+        about: "Acerca de Nosotros",
         blog: "Blog",
-        careers: "Carreras",
+        careers: "Oportunidades de Trabajo",
       },
       legal: {
         title: "LEGAL",
@@ -1329,12 +1312,12 @@ export const translations = {
     underConstruction: {
       title: "PÁGINA EN",
       titleHighlight: "CONSTRUCCIÓN",
-      subtitle: "Estamos trabajando duro para traerte esta funcionalidad",
+      subtitle: "Estamos trabajando arduamente para traerle esta característica",
       message:
-        "Esta página está actualmente en desarrollo. La plataforma CUBIX está en construcción y se están agregando nuevas funciones regularmente. Gracias por su paciencia mientras construimos el futuro de los sistemas ERP autónomos.",
-      eta: "Finalización esperada: Q1 2026",
-      backHome: "Volver al Inicio",
-      signUpMVP: "Registrarse para el MVP",
+        "Esta página está actualmente en desarrollo. La plataforma CUBIX está en construcción y nuevas características están siendo agregadas regularmente. Gracias por su paciencia mientras construimos el futuro de los sistemas ERP autónomos.",
+      eta: "Conclusión esperada: Q1 2026",
+      backHome: "Volver a Inicio",
+      signUpMVP: "Registrarse para MVP",
     },
   },
   fr: {
@@ -1344,18 +1327,18 @@ export const translations = {
       product: "Produit",
       technology: "Technologie",
       contact: "Contact",
-      signUpMVP: "S'inscrire au MVP",
+      signUpMVP: "S'inscrire pour le MVP",
     },
     // Hero Section
     hero: {
-      patentBadge: "ARCHITECTURE BREVETÉE",
+      patentBadge: "ARCHITECTURE PATENTÉE",
       title: "LE PREMIER ERP AVEC IA QUI",
-      titleHighlight: "FONCTIONNE DE MANIÈRE AUTONOME",
-      titleEnd: ", PAS SEULEMENT ASSISTE",
+      titleHighlight: "FONCTIONNE AUTONOMEMENT",
+      titleEnd: ", PASSEMENT DE L'ASSISTANCE",
       subtitle: "90% d'Autonomie",
-      subtitleFeatures: "Correction Auto des Bugs • Support Instantané 24/7 • Zéro Consultant",
-      ctaPrimary: "S'inscrire au MVP gratuit",
-      ctaSecondary: "Voir Comment Ça Marche",
+      subtitleFeatures: "Auto-Réparation des Bugs • Support Instantané 24/7 • Aucun Consultant",
+      ctaPrimary: "S'inscrire pour le MVP gratuit",
+      ctaSecondary: "Voir Comment Cela Fonctionne",
       imageAlt: "Tableau de bord CUBIX ERP",
     },
     // Problem Section
@@ -1363,115 +1346,119 @@ export const translations = {
       title: "LES ERP TRADITIONNELS SONT",
       titleHighlight: "OBSOLÈTES",
       painPoints: [
-        { title: "Support basé sur tickets", description: "Jours d'attente pour des corrections simples" },
-        { title: "Résolution de bugs", description: "Plus de 4 heures par incident" },
-        { title: "Consultants coûteux", description: "100-200€/heure de coûts continus" },
-        { title: "IA comme complément", description: "Pas de vraie autonomie, juste assistance" },
-        { title: "Zéro optimisation proactive", description: "Systèmes réactifs, non prédictifs" },
+        { title: "Support basé sur les tickets", description: "Jours d'attente pour les corrections simples" },
+        { title: "Résolution des bugs", description: "Plus de 4 heures par incident" },
+        { title: "Consultants coûteux", description: "Coûts continuels de €100-200/h" },
+        { title: "IA comme complément", description: "Aucune véritable autonomie, juste assistance" },
+        { title: "Aucune optimisation proactive", description: "Systèmes réactifs, pas prédictifs" },
       ],
       quote:
-        "SAP, Oracle, Odoo... ont de l'IA. Mais c'est un ASSISTANT qui a besoin d'humains. Nous avons un AGENT qui fonctionne de manière autonome.",
+        "SAP, Oracle, Odoo... ont de l'IA. Mais c'est un ASSISTANT qui nécessite des humains. Nous avons un AGENT qui fonctionne de manière autonome.",
     },
     // Solution Section
     solution: {
-      title: "CUBIX :",
-      titleHighlight: "IA STRUCTURELLE",
-      titleEnd: ", PAS COMPLÉMENT",
-      subtitle: "Construit de zéro avec l'IA au cœur, pas ajouté après coup",
+      title: "CUBIX:",
+      titleHighlight: "IA STRUCTURÉE",
+      titleEnd: ", PAS DE COMPLÉMENT",
+      subtitle: "Construit de fond avec l'IA au cœur, pas comme un ajout",
       features: [
         { title: "90% d'Autonomie", description: "L'IA gère les opérations de bout en bout sans intervention humaine" },
         {
-          title: "Les Bugs se Corrigent Automatiquement",
-          description: "Système auto-réparant détecte et résout les problèmes automatiquement",
+          title: "Les Bugs S'Auto-Réparent",
+          description: "Système auto-réparateur détecte et résout les problèmes automatiquement",
         },
         { title: "Support 24/7 <1sec", description: "Réponses instantanées de l'IA, sans tickets, sans attente" },
-        { title: "Zéro Consultant", description: "Économisez 100-200€/heure avec opérations autonomes" },
-        { title: "MTTR : 30min vs 4h", description: "8x plus rapide en temps moyen de résolution" },
-        { title: "Système Auto-Évolutif", description: "Apprend et optimise continuellement à partir de vos données" },
+        { title: "Aucun Consultant", description: "Économisez €100-200/h avec des opérations autonomes" },
+        { title: "MTTR: 30min vs 4h", description: "8 fois plus rapide pour le temps moyen de résolution" },
+        { title: "Système Auto-Évoluant", description: "Apprend et optimise continuellement à partir de vos données" },
       ],
     },
     // Architecture Section
     architecture: {
       title: "ARCHITECTURE",
-      titleHighlight: "IA MULTI-COUCHES À 4 NIVEAUX",
-      subtitle: "Système d'escalade basé sur la confiance achemine les requêtes vers la couche IA optimale",
+      titleHighlight: "ARCHECTURE IA DE 4 COUCES MULTINIVEAUX",
+      subtitle: "Système d'escalade basé sur la confiance dirige les requêtes vers la couche optimale d'IA",
       layers: [
         {
           name: "IA LOCALE",
           model: "DeepSeek R1 8B",
-          description: "70% des requêtes résolues localement, <100ms temps de réponse",
+          description: "70% des requêtes résolues localement, temps de réponse <100ms",
         },
-        { name: "IA DE SUPPORT", model: "Llama 3.2 11B", description: "Analyse spécialisée 24/7, aucun ticket requis" },
+        {
+          name: "IA DE SUPPORT",
+          model: "Llama 3.2 11B",
+          description: "Analyse spécialisée 24/7, pas de tickets nécessaires",
+        },
         {
           name: "IA CENTRALE",
           model: "Llama 3.3 70B",
-          description: "Optimisation complexe des bugs et décisions système",
+          description: "Optimisation complexe des bugs et décisions de système",
         },
         {
           name: "IA DEVOPS",
           model: "DeepSeek Coder 33B",
-          description: "Auto-réparation du code, résolution autonome, déploiement continu",
+          description: "Auto-réparation de code, résolution autonome, déploiement continu",
         },
       ],
-      cta: "Voir la Démonstration Technique",
+      cta: "Voir la Démo Technique",
     },
     // Comparison Section
     comparison: {
       title: "CUBIX vs",
       titleEnd: "SAP/ORACLE/ODOO",
       tableHeaders: {
-        feature: "Caractéristique",
-        traditional: "ERP Traditionnels",
+        feature: "Fonctionnalité",
+        traditional: "ERPs Traditionnels",
         cubix: "CUBIX",
       },
       features: [
         { feature: "IA native au cœur" },
         { feature: "Autonomie totale (90%)" },
-        { feature: "Bugs auto-réparateurs" },
+        { feature: "Bugs auto-réparés" },
         { feature: "Support instantané (<1sec)" },
-        { feature: "Zéro consultant nécessaire" },
+        { feature: "Aucun consultant nécessaire" },
         { feature: "Temps de réponse", traditional: "Heures/Jours", cubix: "<1 seconde" },
         { feature: "Temps moyen de réparation", traditional: "Plus de 4 heures", cubix: "30 minutes" },
       ],
     },
     // Modules Section
     modules: {
-      title: "MODULES",
-      titleHighlight: "INCLUS DANS LE MVP",
-      subtitle: "Fonctionnalités essentielles prêtes pour le lancement de votre entreprise",
+      title: "MVP",
+      titleHighlight: "MODULES INCLUS",
+      subtitle: "Fonctionnalités principales prêtes pour le lancement de votre entreprise",
       items: [
-        { name: "CRM et Leads", description: "Gestion de la relation client et suivi des leads" },
-        { name: "Ventes et Facturation", description: "Cycle complet de ventes et facturation automatisée" },
-        { name: "Bons de Commande", description: "Approvisionnement et gestion des fournisseurs" },
-        { name: "Gestion des Stocks", description: "Contrôle des stocks en temps réel et entreposage" },
+        { name: "CRM et Leads", description: "Gestion des relations clients et suivi des leads" },
+        { name: "Ventes et Facturation", description: "Cycle de vente complet et facturation automatique" },
+        { name: "Commandes d'Achat", description: "Approvisionnement et gestion des fournisseurs" },
+        { name: "Gestion de Stock", description: "Contrôle de stock en temps réel et entrepôt" },
         { name: "Comptabilité", description: "Gestion financière complète et rapports" },
         { name: "Rapports avec IA", description: "Analyses intelligentes et prévisions" },
-        { name: "Flux Automatisés", description: "Automatisation personnalisée des processus métier" },
+        { name: "Flux Automatisés", description: "Automatisation personnalisée de processus métier" },
         { name: "Permissions et Sécurité", description: "Accès basé sur les rôles et protection des données" },
         { name: "Multi-langue", description: "Support international et localisation" },
       ],
-      note: "Ces 9 modules principaux sont inclus dans le MVP. Le produit final comportera plus de 70 modules complets.",
+      note: "Ces 9 modules principaux sont inclus dans le MVP. Le produit final comptera plus de 70 modules abordatifs.",
     },
     // Roadmap Section
     roadmap: {
-      title: "FEUILLE DE ROUTE :",
-      titleHighlight: "12-16 MOIS POUR FINALISER LE MVP",
-      subtitle: "Calendrier de développement structuré avec exécution parallèle",
+      title: "ROUTES:",
+      titleHighlight: "12-16 MOIS POUR COMPLÉTER LE MVP",
+      subtitle: "Timeline de développement structurée avec exécution parallèle",
       timeline: {
-        title: "Calendrier de Lancement du Produit",
+        title: "Timeline de Lancement du Produit",
         closedAlpha: {
           date: "15 Mai 2026",
           label: "ALPHA FERMÉ",
           description: "Accès limité pour les testeurs initiaux",
         },
         openBeta: {
-          date: "1er Août 2026",
+          date: "1 Août 2026",
           label: "BETA OUVERT",
-          description: "La phase de tests publics commence",
+          description: "Début de la phase de test publique",
         },
         mvp: {
-          date: "1er Janvier 2027",
-          label: "LANCEMENT MVP",
+          date: "1 Janvier 2027",
+          label: "LANÇEMENT MVP",
           description: "Lancement complet du produit",
         },
       },
@@ -1484,7 +1471,7 @@ export const translations = {
             "Base complète du système",
             "Base de données et ORM",
             "Authentification et Sécurité",
-            "Vues et IU",
+            "Vues et UI",
             "API REST",
             "IA Native",
           ],
@@ -1499,109 +1486,108 @@ export const translations = {
           phase: "Phase 3",
           name: "APP VENTES",
           duration: "1-2 mois",
-          features: ["Module de Ventes Complet", "Devis et Commandes", "Factures et Paiements"],
+          features: ["Module Ventes Complet", "Devis et Commandes", "Factures et Paiements"],
         },
         {
           phase: "Phase 4",
           name: "APP INVENTAIRE",
           duration: "1-2 mois",
-          features: ["Module d'Inventaire Complet", "Entrepôts et Stocks", "Lots et Numéros de Série"],
+          features: ["Module Inventaire Complet", "Entrepôts et Stock", "Lots et Numéros de Série"],
         },
         {
           phase: "Phase 5",
           name: "APP ACHATS",
           duration: "1-2 mois",
-          features: ["Module d'Achats Complet", "Réquisitions et Commandes", "Gestion des Fournisseurs"],
+          features: ["Module Achats Complet", "Requêtes et Commandes", "Gestion des Fournisseurs"],
         },
         {
           phase: "Phase 6",
           name: "APP COMPTABILITÉ",
           duration: "1-2 mois",
-          features: ["Module de Comptabilité Complet", "Gestion Financière", "Rapports Avancés"],
+          features: ["Module Comptabilité Complet", "Gestion Financière", "Rapports Avancés"],
         },
       ],
-      note: "Développement parallèle après la Phase 1 accélère le délai de mise sur le marché",
+      note: "Développement parallèle après la Phase 1 accélère le temps sur le marché",
     },
     // Tech Stack Section
     techStack: {
       title: "CONSTRUIT AVEC",
       titleHighlight: "TECHNOLOGIE DE POINTE",
-      patentTitle: "ARCHITECTURE BREVETÉE",
+      patentTitle: "ARCHITECTURE PATENTÉE",
       quote: "Système unique d'escalade basé sur la confiance",
       metrics: [
-        "Plus de 150 000 lignes de code",
+        "Plus de 150.000 lignes de code",
         "16 modules d'analyse autonomes",
-        "Plus de 100 fonctions d'analyse intelligente",
+        "Plus de 100 fonctions d'analyse intelligentes",
       ],
-      badge: "Open Source et Protection de la Vie Privée",
-      dateNote: "Fonctionnalités mises en œuvre au 27 novembre 2025",
+      badge: "Code Ouvert et Confidentialité en Première Position",
+      dateNote: "Fonctionnalités implémentées le 27 Novembre 2025",
     },
     earlyAccess: {
-      title: "REJOIGNEZ NOTRE",
-      titleHighlight: "PROGRAMME D'ACCÈS ANTICIPÉ",
+      title: "JOIN NOTRE",
+      titleHighlight: "PROGRAMME D'ACCÈS PRÉCOCE",
       subtitle: "Soyez parmi les premiers à expérimenter CUBIX et façonner son avenir",
       tiers: [
         {
           name: "ALPHA FERMÉ",
           date: "15 Mai 2026",
-          badge: "Places Limitées",
+          badge: "Postes Limités",
           features: [
-            "Accès exclusif en avant-première",
+            "Accès exclusif en première main",
             "Communication directe avec les développeurs",
             "Influencer la direction du produit",
-            "Accès automatique à la Bêta",
+            "Accès automatique à la Beta",
           ],
         },
         {
-          name: "TEST BÊTA",
-          date: "1er Août 2026",
+          name: "TEST BETA",
+          date: "1 Août 2026",
           badge: "Test Public",
           features: [
             "Accès anticipé aux fonctionnalités",
-            "Rapport prioritaire de bugs",
-            "Forum de feedback communautaire",
+            "Signalement prioritaire des bugs",
+            "Forum de feedback de la communauté",
             "Expérience prête pour la production",
           ],
         },
       ],
       benefits: {
-        title: "Avantages pour les Testeurs Anticipés",
+        title: "Avantages pour les Testeurs Précoce",
         items: [
           {
             icon: "Gift",
-            title: "Réductions Exclusives",
+            title: "Remises Exclusives",
             description:
-              "Les testeurs Alpha reçoivent 30% de réduction pour les 2 premières années. Les testeurs Bêta reçoivent 10% de réduction pour la première année.",
+              "Les testeurs Alpha obtiennent un 30% de remise sur les deux premières années. Les testeurs Beta obtiennent un 10% de remise sur la première année.",
           },
           {
             icon: "Zap",
             title: "Support Prioritaire",
             description:
-              "Canal de support dédié avec des temps de réponse plus rapides pour tous les testeurs anticipés.",
+              "Canal de support dédié avec des temps de réponse plus rapides pour tous les testeurs précoce.",
           },
           {
             icon: "Trophy",
             title: "Statut de Fondateur",
-            description: "Reconnu comme utilisateur fondateur avec badge exclusif et avantages à vie.",
+            description: "Reconnu comme utilisateur fondateur avec badge exclusif et avantages vitaux.",
           },
           {
             icon: "Target",
-            title: "Façonner le Produit",
-            description:
-              "Vos retours influencent directement les fonctionnalités et les priorités de la feuille de route.",
+            title: "Faire Évoluer le Produit",
+            description: "Votre feedback influence directement les fonctionnalités et les priorités de la route.",
           },
         ],
-        note: "Les réductions ne s'appliquent qu'aux plans de paiement annuel ou de 2 ans (non disponibles pour la facturation mensuelle). Les testeurs Alpha doivent s'engager sur le plan de 2 ans pour recevoir 30% de réduction. Les testeurs Bêta doivent s'engager sur le plan annuel pour recevoir 10% de réduction. Les réductions s'appliquent aux participants actifs qui fournissent un feedback significatif.",
+        note: "Les remises s'appliquent uniquement aux plans de paiement annuel ou biennal (non disponible pour la facturation mensuelle). Les testeurs Alpha doivent s'engager avec le plan biennal pour bénéficier d'un 30% de remise. Les testeurs Beta doivent s'engager avec le plan annuel pour bénéficier d'un 10% de remise. Les remises s'appliquent aux participants actifs qui fournissent un feedback significatif.",
       },
       cta: {
         alpha: "Postuler pour l'Alpha Fermé",
-        beta: "S'inscrire à la Bêta",
+        beta: "S'inscrire pour la Beta",
       },
     },
     // TEAM SECTION
     team: {
-      title: "RENCONTREZ L'",
-      titleHighlight: "ÉQUIPE DE DÉVELOPPEMENT",
+      title: "CONNAÎTRE L'ÉQUIPE",
+      titleHighlight: "DE DÉVELOPPEMENT",
       subtitle: "Ingénieurs expérimentés construisant l'avenir des systèmes ERP autonomes",
       members: [
         {
@@ -1609,18 +1595,18 @@ export const translations = {
           roles: [
             "CTO/CPO",
             "Ingénieur IA / Ingénieur ML",
-            "Data Scientist / Architecte de BD",
-            "Ingénieur Full-Stack",
+            "Scientifique des Données / Architecte de BD",
+            "Développeur Full-Stack",
           ],
           experience: "Plus de 2 ans",
           yearJoined: "Depuis 2023",
-          bio: "Développeur full-stack spécialisé en intégration d'IA et systèmes d'entreprise. Dirige le développement de l'architecture autonome de CUBIX.",
+          bio: "Développeur full-stack spécialisé dans l'intégration de l'IA et les systèmes d'entreprise. Dirige le développement de l'architecture autonome de CUBIX.",
           photo: "/bruno-profile.png",
           github: "https://github.com/BrunoKorpuzCoelho",
           linkedin: "https://www.linkedin.com/in/bruno-coelho-aa4071212/",
         },
       ],
-      learnMore: "En Savoir Plus",
+      learnMore: "Apprendre Plus",
       cta: "Rejoignez Notre Équipe",
     },
     // Pricing Section
@@ -1629,52 +1615,51 @@ export const translations = {
       titleHighlight: "FLEXIBLES",
       titleEnd: "POUR VOTRE ENTREPRISE",
       subtitle:
-        "Tous les plans incluent 3 utilisateurs de base. Évoluez vers des utilisateurs illimités en ajustant vos frais mensuels.",
+        "Tous les plans incluent 3 utilisateurs de base. Échelle jusqu'à des utilisateurs illimités en ajustant le tarif mensuel.",
       tiers: [
         {
           name: "SaaS",
           subtitle: "Infrastructure Partagée",
           features: [
             "Base : 3 utilisateurs inclus",
-            "Évolution vers utilisateurs illimités",
+            "Échelle jusqu'à des utilisateurs illimités",
             "Tous les modules inclus",
             "Support complet",
             "Mises à jour mensuelles",
-            "IA de Support (3 couches : Support, Centrale, DevOps)",
-            "Pas d'IA structurelle (environnement partagé)",
+            "Support IA (3 couches : Support, Central, DevOps)",
+            "Pas d'IA structurée (environnement partagé)",
           ],
         },
         {
-          name: "SERVER HOSTING",
-          subtitle: "VPS Dédié",
+          name: "HOSTING DE SERVEUR",
+          subtitle: "VPS Dédicé",
           features: [
             "Base : 3 utilisateurs inclus",
-            "Évolution vers utilisateurs illimités",
+            "Échelle jusqu'à des utilisateurs illimités",
             "Tous les modules inclus",
             "Support complet",
             "Mises à jour mensuelles",
             "Développement personnalisé disponible",
-            "IA Structurelle (Toutes les 4 couches d'IA y compris Locale)",
-            "Ressources serveur dédiées",
+            "IA Structurée (Toutes les 4 couches d'IA y compris Locale)",
+            "Ressources de serveur dédiées",
           ],
         },
       ],
       cta: "Contactez-nous",
       alert:
-        "Le MVP inclut les couches IA Locale et IA Centrale. Les couches IA DevOps et IA de Support seront ajoutées lors du lancement complet du produit. D'ici là, la couche IA Centrale gère les opérations DevOps et a la capacité totale de le faire.",
+        "Le MVP inclut les couches IA Locale et IA Centrale. Les couches IA DevOps et IA de Support seront ajoutées au lancement complet du produit. Jusqu'à ce jour, la couche IA Centrale gère les opérations DevOps et a une capacité totale pour le faire.",
     },
     // Demo Section
     demo: {
-      title: "PLANIFIEZ VOTRE",
-      titleHighlight: "DÉMONSTRATION GRATUITE",
-      subtitle: "Voyez CUBIX en action et découvrez comment l'IA peut révolutionner la gestion de votre entreprise",
+      title: "INSCRIVEZ-VOUS GRATUITEMENT",
+      titleHighlight: "ACCÈS AU MVP",
+      subtitle: "Rejoignez les early adopters et soyez le premier à découvrir la gestion d'entreprise avec IA de CUBIX",
       form: {
         fullName: "Nom Complet",
         email: "Email Professionnel",
         company: "Entreprise",
         phone: "Téléphone",
         employees: "Nombre d'Employés",
-        schedule: "Quand souhaitez-vous planifier ?",
         comments: "Commentaires",
         commentsPlaceholder: "Parlez-nous de vos besoins...",
         privacy: "J'accepte la politique de confidentialité",
@@ -1688,63 +1673,58 @@ export const translations = {
           "51-200": "51-200",
           "200+": "200+",
         },
-        scheduleOptions: {
-          "this-week": "Cette semaine",
-          "next-week": "Semaine prochaine",
-          evaluating: "Encore en évaluation",
-        },
         securityNote: "Vos données sont sécurisées",
         contactTime: "Contact sous 24h",
-        alert: "⚠️ En raison de la forte demande, places limitées pour les démonstrations personnalisées",
+        alert: "⚠️ Places limitées pour le MVP - les early adopters reçoivent des avantages exclusifs",
       },
       success: {
-        title: "Merci !",
+        title: "Bienvenue au MVP de CUBIX !",
         message:
-          "Nous avons reçu votre demande. Notre équipe vous contactera dans les 24 heures pour planifier votre démonstration personnalisée.",
+          "Merci pour votre inscription ! Vous recevrez des informations détaillées sur nos programmes Alpha, Beta et MVP. Notre équipe vous contactera dans les 24 heures avec les détails du programme et les prochaines étapes.",
       },
     },
     // FAQ Section
     faq: {
       title: "QUESTIONS",
-      titleHighlight: "FRÉQUENTES",
+      titleHighlight: "LES PLUS FRÉQUENTES",
       items: [
         {
-          question: "CUBIX fonctionne-t-il vraiment sans consultants ?",
+          question: "CUBIX fonctionne-t-il vraiment sans consultants?",
           answer:
-            "CUBIX ne nécessite pas de consultants pour l'implémentation, contrairement aux ERP traditionnels. Nous offrons des services de conseil optionnels si vous préférez contact humain, mais nous avons également une intelligence artificielle intégrée qui peut répondre à n'importe quelle question de la meilleure façon possible. C'est un avantage concurrentiel car le conseil est optionnel, pas obligatoire. Les entreprises peuvent économiser de l'argent en utilisant l'IA intégrée au lieu de payer des frais de conseil coûteux.",
+            "CUBIX ne nécessite pas de consultants pour l'implémentation, contrairement aux ERP traditionnels. Nous offrons des services de consulting optionnels si vous préférez un contact humain, mais nous avons également une intelligence artificielle intégrée qui peut répondre à toute question de la meilleure manière possible. C'est une avantage compétitif car le consulting est optionnel, pas obligatoire. Les entreprises peuvent économiser de l'argent en utilisant l'IA intégrée au lieu de payer des frais de consulting coûteux.",
         },
         {
-          question: "Si je veux passer d'un ERP que j'ai déjà à CUBIX, quels sont mes avantages ?",
+          question: "Si je veux passer de l'ERP que j'ai déjà à CUBIX, quels sont mes avantages?",
           answer:
-            "Nous avons un système qui peut fonctionner simultanément avec votre ERP existant, vous permettant de tester CUBIX en même temps. Toutes les données créées dans CUBIX et votre autre ERP sont partagées entre les deux systèmes. Nous capturons toutes les données des deux côtés et synchronisons automatiquement. Par exemple, créez une facture dans l'un ou l'autre système et elle apparaît dans les deux. Votre ERP doit être compatible avec les webhooks ou les connexions API pour cette intégration. De cette façon, vous pouvez tester CUBIX complètement avant de migrer entièrement.",
+            "Nous avons un système qui peut fonctionner simultanément avec votre ERP existant, vous permettant de tester CUBIX en même temps. Tous les données créées à la fois dans CUBIX et votre autre ERP sont partagées entre les deux systèmes. Nous capturons tous les données des deux côtés et les synchronisons automatiquement. Par exemple, créez une facture dans l'un des deux systèmes et elle apparaît dans les deux. Votre ERP doit être compatible avec des connexions webhook ou API pour cette intégration. De cette façon, vous pouvez tester CUBIX complètement avant de migrer totalement.",
         },
         {
-          question: "Comment fonctionne l'IA locale vs l'IA centrale ?",
+          question: "Comment fonctionne l'IA locale vs centrale?",
           answer:
-            "CUBIX utilise un système unique d'escalade basé sur la confiance à 4 niveaux. Les requêtes simples (70%) sont traitées par l'IA Locale (<100ms). Les problèmes plus complexes escaladent vers l'IA de Support, puis l'IA Centrale, et enfin l'IA DevOps pour les corrections au niveau du code. Cela garantit un temps de réponse optimal tout en maintenant une haute précision.",
+            "CUBIX utilise un système unique d'escalade de quatre couches basé sur la confiance. Les requêtes simples (70%) sont gérées par IA Locale (<100ms). Les problèmes plus complexes escalent à IA de Support, puis à IA Centrale et enfin à IA DevOps pour les corrections de niveau de code. Cela garantit un temps de réponse optimal tout en maintenant une haute précision.",
         },
         {
-          question: "Combien de temps prend l'implémentation ?",
+          question: "Combien de temps faut-il pour l'implémentation?",
           answer:
-            "L'implémentation est nettement plus rapide que les ERP traditionnels. La configuration de base peut être complétée en jours, pas en mois. L'IA aide à la migration des données, la configuration et la formation des utilisateurs. La plupart des entreprises sont opérationnelles en 2-4 semaines, contre 6-12 mois pour les systèmes hérités.",
+            "L'implémentation est significativement plus rapide que les ERP traditionnels. La configuration de base peut être terminée en jours, pas en mois. L'IA aide à la migration des données, à la configuration et à la formation des utilisateurs. La plupart des entreprises sont opérationnelles dans les 2-4 semaines, en comparaison avec 6-12 mois pour les systèmes hérités.",
         },
         {
-          question: "Mes données sont-elles sécurisées ?",
+          question: "Mes données sont-elles sécurisées?",
           answer:
-            "Absolument. CUBIX suit les normes de sécurité de niveau entreprise avec cryptage de bout en bout, contrôle d'accès basé sur les rôles et audits de sécurité réguliers. Nous offrons des options de déploiement cloud et sur site. Tout le traitement IA respecte la confidentialité de vos données et nous n'entraînons jamais sur vos informations propriétaires.",
+            "Absolument. CUBIX suit des normes de sécurité d'entreprise avec une cryptographie de bout en bout, un contrôle d'accès basé sur les rôles et des audits de sécurité réguliers. Nous offrons des options d'implémentation en cloud et sur site. Toutes les opérations d'IA respectent la confidentialité de vos données et nous ne formons jamais sur des informations propriétaires.",
         },
         {
-          question: "Puis-je intégrer avec les systèmes existants ?",
+          question: "Puis-je m'intégrer avec des systèmes existants?",
           answer:
-            "Oui, CUBIX offre une API REST complète et supporte les protocoles d'intégration standard. Notre IA peut aider à mapper et migrer les données des systèmes existants incluant SAP, Oracle, Odoo et solutions personnalisées. Nous fournissons également des connecteurs préconstruits pour les outils métier courants.",
+            "Oui, CUBIX offre une API REST complète et prend en charge des protocoles d'intégration standard. L'IA peut aider à mapper et à migrer des données de vos systèmes existants, y compris SAP, Oracle, Odoo et des solutions personnalisées. Nous offrons également des connecteurs préconstruits pour des outils de business courants.",
         },
         {
-          question: "Quelle est la différence vs SAP/Oracle/Odoo ?",
+          question: "Quelle est la différence avec SAP/Oracle/Odoo?",
           answer:
-            "Les ERP traditionnels ajoutent l'IA comme assistant - cela nécessite toujours une intervention humaine. CUBIX a l'IA dans son cœur structurel, permettant une véritable autonomie. Nous atteignons 90% d'opération autonome, réponse de support <1 seconde, MTTR de 30 minutes vs plus de 4 heures, et éliminons complètement les coûts de conseil.",
+            "Les ERP traditionnels collent l'IA comme un assistant - elle nécessite toujours une intervention humaine. CUBIX a l'IA au cœur de sa structure, permettant une véritable autonomie. Nous atteignons une autonomie de 90%, un support de <1 seconde, un MTTR de 30 minutes contre 4+ heures et nous éliminons totalement les coûts de consulting.",
         },
       ],
-      cta: "Vous avez encore des questions ? Contactez-nous",
+      cta: "Toujours des questions ? Contactez-nous",
     },
     // Footer
     footer: {
@@ -1757,7 +1737,7 @@ export const translations = {
       },
       company: {
         title: "ENTREPRISE",
-        about: "À Propos",
+        about: "À Propos de Nous",
         blog: "Blog",
         careers: "Carrières",
       },
@@ -1778,12 +1758,10 @@ export const translations = {
       titleHighlight: "CONSTRUCTION",
       subtitle: "Nous travaillons dur pour vous apporter cette fonctionnalité",
       message:
-        "Cette page est actuellement en cours de développement. La plateforme CUBIX est en construction et de nouvelles fonctionnalités sont ajoutées régulièrement. Merci de votre patience pendant que nous construisons l'avenir des systèmes ERP autonomes.",
-      eta: "Achèvement prévu: Q1 2026",
+        "Cette page est actuellement en développement. La plateforme CUBIX est en construction et de nouvelles fonctionnalités sont ajoutées régulièrement. Merci de votre patience pendant que nous construisons l'avenir des systèmes ERP autonomes.",
+      eta: "Fin prévue : Q1 2026",
       backHome: "Retour à l'Accueil",
-      signUpMVP: "S'inscrire au MVP",
+      signUpMVP: "S'inscrire pour le MVP",
     },
   },
-} as const
-
-export type TranslationKeys = typeof translations.en
+}

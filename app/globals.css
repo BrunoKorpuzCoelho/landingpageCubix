@@ -145,6 +145,55 @@
   .gradient-border {
     border-image: linear-gradient(90deg, #ed2009 0%, #ff5b19 100%) 1;
   }
+
+  /* Adding scroll-triggered animation styles */
+  /* Slide from left animation */
+  .animate-slide-in-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+
+  .animate-slide-in-left.is-visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  /* Slide from right animation */
+  .animate-slide-in-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+
+  .animate-slide-in-right.is-visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  /* Fade in animation */
+  .animate-fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+
+  .animate-fade-in.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Scale fade in animation */
+  .animate-scale-fade-in {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+
+  .animate-scale-fade-in.is-visible {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 /* Added animation for reduced motion preference */
