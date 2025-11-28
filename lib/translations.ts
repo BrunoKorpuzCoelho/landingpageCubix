@@ -263,7 +263,7 @@ export const translations = {
       members: [
         {
           name: "Bruno Coelho",
-          roles: ["CTO/CPO", "AI Engineer / ML Engineer", "Data Scientist / Database Architect", "Full-Stack Engineer"],
+          roles: ["Founder", "AI Engineer / ML Engineer", "Data Scientist / Database Architect", "Full-Stack Engineer"],
           experience: "2+ years",
           yearJoined: "Since 2023",
           bio: "Full-stack developer specializing in AI integration and enterprise systems. Leading the development of CUBIX's autonomous architecture.",
@@ -702,7 +702,7 @@ export const translations = {
         {
           name: "Bruno Coelho",
           roles: [
-            "CTO/CPO",
+            "Fundador",
             "Engenheiro de IA / Engenheiro de ML",
             "Cientista de Dados / Arquiteto de BD",
             "Engenheiro Full-Stack",
@@ -1149,7 +1149,7 @@ export const translations = {
         {
           name: "Bruno Coelho",
           roles: [
-            "CTO/CPO",
+            "Fundador",
             "Ingeniero de IA / Ingeniero de ML",
             "Científico de Datos / Arquitecto de BD",
             "Desarrollador Full-Stack",
@@ -1593,7 +1593,7 @@ export const translations = {
         {
           name: "Bruno Coelho",
           roles: [
-            "CTO/CPO",
+            "Fondateur",
             "Ingénieur IA / Ingénieur ML",
             "Scientifique des Données / Architecte de BD",
             "Développeur Full-Stack",

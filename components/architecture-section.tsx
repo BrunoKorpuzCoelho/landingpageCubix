@@ -1,16 +1,16 @@
-"use client"
-import { ArrowDown } from "lucide-react"
-import { useLanguage } from "@/contexts/language-context"
+"use client";
+import { ArrowDown } from "lucide-react";
+import { useLanguage } from "@/contexts/language-context";
 
 const layerGradients = [
   "from-[#ED2009] to-[#FF5B19]",
   "from-[#FF5B19] to-[#FF8040]",
   "from-[#FF8040] to-[#FFA060]",
   "from-[#FFA060] to-[#FFC080]",
-]
+];
 
 export function ArchitectureSection() {
-  const { t } = useLanguage()
+  const { t } = useLanguage();
 
   return (
     <section id="technology" className="py-20 bg-secondary/50">
@@ -18,9 +18,14 @@ export function ArchitectureSection() {
         <div className="max-w-4xl mx-auto space-y-12">
           <div className="text-center space-y-4">
             <h2 className="text-4xl md:text-5xl font-bold text-balance">
-              {t.architecture.title} <span className="gradient-text">{t.architecture.titleHighlight}</span>
+              {t.architecture.title}{" "}
+              <span className="gradient-text">
+                {t.architecture.titleHighlight}
+              </span>
             </h2>
-            <p className="text-xl text-muted-foreground">{t.architecture.subtitle}</p>
+            <p className="text-xl text-muted-foreground">
+              {t.architecture.subtitle}
+            </p>
           </div>
 
           <div className="space-y-6">
@@ -35,7 +40,9 @@ export function ArchitectureSection() {
                         <h3 className="text-2xl font-bold">{layer.name}</h3>
                       </div>
                     </div>
-                    <p className="text-muted-foreground leading-relaxed">{layer.description}</p>
+                    <p className="text-muted-foreground leading-relaxed">
+                      {layer.description}
+                    </p>
                   </div>
                 </div>
 
@@ -48,11 +55,9 @@ export function ArchitectureSection() {
             ))}
           </div>
 
-          <div className="text-center pt-8">
-            
-          </div>
+          <div className="text-center pt-8"></div>
         </div>
       </div>
     </section>
-  )
+  );
 }
