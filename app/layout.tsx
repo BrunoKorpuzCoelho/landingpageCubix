@@ -14,21 +14,8 @@ export const metadata: Metadata = {
   keywords: "ERP, AI ERP, autonomous ERP, business management, CRM, accounting, inventory",
   generator: "v0.app",
   icons: {
-    icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: "/apple-icon.png",
+    icon: "/cubix_favicon.png",
+    apple: "/cubix_favicon.png",
   },
 }
 
