@@ -1,5 +1,5 @@
+"use client"
 import { Check, X } from "lucide-react"
-;("use client")
 import { useLanguage } from "@/contexts/language-context"
 
 export function ComparisonSection() {

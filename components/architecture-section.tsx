@@ -1,5 +1,5 @@
+"use client"
 import { ArrowDown } from "lucide-react"
-;("use client")
 import { useLanguage } from "@/contexts/language-context"
 
 const layerGradients = [

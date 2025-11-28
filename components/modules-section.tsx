@@ -1,5 +1,5 @@
+"use client"
 import { Users, ShoppingCart, Package, Warehouse, Calculator, BarChart3, Workflow, Shield, Globe } from "lucide-react"
-;("use client")
 import { useLanguage } from "@/contexts/language-context"
 
 const moduleIcons = [Users, ShoppingCart, Package, Warehouse, Calculator, BarChart3, Workflow, Shield, Globe]

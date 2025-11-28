@@ -1,3 +1,4 @@
+"use client"
 import { Header } from "@/components/header"
 import { HeroSection } from "@/components/hero-section"
 import { ProblemSection } from "@/components/problem-section"
@@ -16,7 +17,6 @@ import { Rocket } from "lucide-react"
 import { TeamSection } from "@/components/team-section"
 import { AnimatedSection } from "@/components/animated-section"
 import { EarlyAccessSection } from "@/components/early-access-section" // Import EarlyAccessSection
-;("use client")
 import { useLanguage } from "@/contexts/language-context"
 
 export default function Page() {
