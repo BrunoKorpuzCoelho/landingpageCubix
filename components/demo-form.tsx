@@ -16,6 +16,7 @@ import { submitMVPForm } from "@/app/actions/submit-mvp-form";
 function DemoFormContent() {
   const { t } = useLanguage();
   const searchParams = useSearchParams();
+  const [mounted, setMounted] = useState(false);
 
   const [formData, setFormData] = useState({
     fullName: "",
@@ -27,17 +28,23 @@ function DemoFormContent() {
     comments: "",
     privacyAccepted: false,
   });
+  
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    const program = searchParams.get("program");
-    if (program && ["Alpha", "Beta", "MVP"].includes(program)) {
-      setFormData((prev) => ({ ...prev, program }));
+    if (mounted) {
+      const program = searchParams.get("program");
+      if (program && ["Alpha", "Beta", "MVP"].includes(program)) {
+        setFormData((prev) => ({ ...prev, program }));
+      }
     }
-  }, [searchParams]);
+  }, [searchParams, mounted]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
