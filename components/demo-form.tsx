@@ -28,7 +28,7 @@ function DemoFormContent() {
     comments: "",
     privacyAccepted: false,
   });
-  
+
   useEffect(() => {
     setMounted(true);
   }, []);
