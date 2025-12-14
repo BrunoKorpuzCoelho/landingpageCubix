@@ -1,4 +1,4 @@
-export type Language = "en" | "pt" | "es" | "fr"
+export type Language = "en" | "pt" | "es" | "fr";
 
 export const translations = {
   en: {
@@ -13,59 +13,103 @@ export const translations = {
     // Hero Section
     hero: {
       patentBadge: "PATENTED ARCHITECTURE",
-      title: "THE FIRST ERP WITH AI THAT",
-      titleHighlight: "WORKS AUTONOMOUSLY",
-      titleEnd: ", NOT JUST ASSISTS",
-      subtitle: "90% Autonomy",
-      subtitleFeatures: "Auto-Fixes Bugs • 24/7 Instant Support • Zero Consultants",
+      title: "THE FIRST SYSTEM BUILT FOR",
+      titleHighlight: "CONSTRUCTION INDUSTRY",
+      titleEnd: "",
+      subtitle:
+        "Automated project management with IoT integration and AI-powered quality control",
+      subtitleFeatures:
+        "IoT Ready • Quality Control • GPS Fleet Tracking • Legacy Equipment Integration",
       ctaPrimary: "Sign up for free MVP",
       ctaSecondary: "Watch How It Works",
-      imageAlt: "CUBIX ERP Dashboard",
+      imageAlt: "CUBIX Construction Dashboard",
     },
     // Problem Section
     problem: {
-      title: "TRADITIONAL ERPs ARE",
-      titleHighlight: "OBSOLETE",
+      title: "TRADITIONAL CONSTRUCTION SOFTWARE IS",
+      titleHighlight: "OUTDATED",
       painPoints: [
-        { title: "Ticket-based support", description: "Days of waiting for simple fixes" },
-        { title: "Bug resolution", description: "4+ hours per incident" },
-        { title: "Expensive consultants", description: "€100-200/hour ongoing costs" },
-        { title: "AI as add-on", description: "No real autonomy, just assistance" },
-        { title: "Zero proactive optimization", description: "Reactive systems, not predictive" },
+        {
+          title: "No IoT integration",
+          description: "Cannot connect to legacy machinery",
+        },
+        {
+          title: "Manual quality control",
+          description: "Clipboard to digital - inefficient",
+        },
+        {
+          title: "Expensive per-user licensing",
+          description: "Costs scale with every new user",
+        },
+        {
+          title: "Poor fleet tracking",
+          description: "No real-time equipment monitoring",
+        },
+        {
+          title: "Complex setup",
+          description: "Months of consultants and training",
+        },
       ],
       quote:
-        "SAP, Oracle, Odoo... have AI. But it's an ASSISTANT that needs humans. We have an AGENT that works autonomously.",
+        "Odoo, SAP, Procore, Primavera... are built for generic business. CUBIX is built specifically for construction with IoT, quality control, and fleet management from day one.",
     },
     // Solution Section
     solution: {
       title: "CUBIX:",
       titleHighlight: "STRUCTURAL AI",
       titleEnd: ", NOT ADD-ON",
-      subtitle: "Built from the ground up with AI at its core, not bolted on as an afterthought",
+      subtitle:
+        "Built from the ground up with AI at its core, not bolted on as an afterthought",
       features: [
-        { title: "90% Autonomy", description: "AI handles operations end-to-end without human intervention" },
         {
-          title: "Bugs Auto-Fix Themselves",
-          description: "Self-healing system detects and resolves issues automatically",
+          title: "IoT for Legacy Machinery",
+          description:
+            "Integrate old analog equipment using computer vision and simple sensors - no expensive retrofits needed",
         },
-        { title: "24/7 Support <1sec", description: "Instant AI responses, no tickets, no waiting" },
-        { title: "Zero Consultants", description: "Save €100-200/hour with autonomous operations" },
-        { title: "MTTR: 30min vs 4h", description: "8x faster mean time to resolution" },
-        { title: "Self-Evolving System", description: "Learns and optimizes continuously from your data" },
+        {
+          title: "Automated Quality Control",
+          description:
+            "Digital inspections with photo documentation, automatic issue detection, and instant compliance reports",
+        },
+        {
+          title: "Smart Project Tracking",
+          description:
+            "Real-time project status, resource allocation, and timeline predictions powered by AI analysis",
+        },
+        {
+          title: "Fleet & Equipment Management",
+          description:
+            "GPS tracking, fuel monitoring via OBD-II, maintenance schedules, and cost-per-project analytics",
+        },
+        {
+          title: "Vision-Based Monitoring",
+          description:
+            "AI reads analog gauges, detects safety hazards, monitors material levels - all from camera feeds",
+        },
+        {
+          title: "Predictive Maintenance",
+          description:
+            "Prevent equipment failures before they happen - AI analyzes sensor data and usage patterns",
+        },
       ],
     },
     // Architecture Section
     architecture: {
       title: "MULTI-LAYER",
       titleHighlight: "4-TIER AI ARCHITECTURE",
-      subtitle: "Confidence-based escalation system routes queries to the optimal AI layer",
+      subtitle:
+        "Confidence-based escalation system routes queries to the optimal AI layer",
       layers: [
         {
           name: "LOCAL AI",
           model: "DeepSeek R1 8B",
           description: "70% queries resolved locally, <100ms response time",
         },
-        { name: "SUPPORT AI", model: "Llama 3.2 11B", description: "Specialized 24/7 analysis, no tickets required" },
+        {
+          name: "SUPPORT AI",
+          model: "Llama 3.2 11B",
+          description: "Specialized 24/7 analysis, no tickets required",
+        },
         {
           name: "CENTRAL AI",
           model: "Llama 3.3 70B",
@@ -74,7 +118,8 @@ export const translations = {
         {
           name: "DEVOPS AI",
           model: "DeepSeek Coder 33B",
-          description: "Code auto-healing, autonomous resolution, continuous deployment",
+          description:
+            "Code auto-healing, autonomous resolution, continuous deployment",
         },
       ],
       cta: "See Technical Demo",
@@ -82,59 +127,110 @@ export const translations = {
     // Comparison Section
     comparison: {
       title: "CUBIX vs",
-      titleEnd: "SAP/ORACLE/ODOO",
+      titleEnd: "TRADITIONAL CONSTRUCTION SOFTWARE",
       tableHeaders: {
         feature: "Feature",
-        traditional: "Traditional ERPs",
-        cubix: "CUBIX",
+        traditional: "Odoo, SAP, Procore, Primavera",
+        cubix: "CUBIX Construction",
       },
       features: [
-        { feature: "AI native in core" },
-        { feature: "Full autonomy (90%)" },
-        { feature: "Auto-healing bugs" },
-        { feature: "Instant support (<1sec)" },
-        { feature: "Zero consultants needed" },
-        { feature: "Response time", traditional: "Hours/Days", cubix: "<1 second" },
-        { feature: "Mean time to repair", traditional: "4+ hours", cubix: "30 minutes" },
+        { feature: "IoT integration for legacy machinery" },
+        { feature: "Digital quality control with auto-reporting" },
+        { feature: "Built for construction workflows" },
+        { feature: "Affordable project-based pricing" },
+        { feature: "AI-powered project insights" },
+        {
+          feature: "Setup time",
+          traditional: "Months with consultants",
+          cubix: "Plug-and-play, works immediately",
+        },
+        {
+          feature: "Fleet/equipment tracking",
+          traditional: "Limited or add-on",
+          cubix: "GPS + OBD-II integration built-in",
+        },
       ],
     },
     // Modules Section
     modules: {
-      title: "MVP",
-      titleHighlight: "MODULES INCLUDED",
-      subtitle: "Core features ready for your business launch",
+      title: "CONSTRUCTION",
+      titleHighlight: "CORE MODULES",
+      subtitle:
+        "Complete project lifecycle management built for the construction industry",
       items: [
-        { name: "CRM & Leads", description: "Customer relationship management and lead tracking" },
-        { name: "Sales & Invoicing", description: "Complete sales cycle and automated billing" },
-        { name: "Purchase Orders", description: "Procurement and supplier management" },
-        { name: "Inventory Management", description: "Real-time stock control and warehousing" },
-        { name: "Accounting", description: "Full financial management and reporting" },
-        { name: "AI-Powered Reports", description: "Intelligent analytics and forecasting" },
-        { name: "Automated Workflows", description: "Custom business process automation" },
-        { name: "Permissions & Security", description: "Role-based access and data protection" },
-        { name: "Multi-language", description: "International support and localization" },
+        {
+          name: "Projects",
+          description:
+            "Complete project lifecycle management - planning, execution, tracking, and closeout",
+        },
+        {
+          name: "Quality Control",
+          description:
+            "Digital inspections, photo documentation, compliance checklists, automated reports",
+        },
+        {
+          name: "IoT Integration",
+          description:
+            "Sensor monitoring, legacy machinery integration, real-time alerts, camera-based monitoring",
+        },
+        {
+          name: "Fleet Tracking",
+          description:
+            "GPS vehicle tracking, route optimization, fuel monitoring, maintenance scheduling",
+        },
+        {
+          name: "Equipment Management",
+          description:
+            "Asset tracking, usage logs, maintenance history, rental coordination",
+        },
+        {
+          name: "Workforce Management",
+          description:
+            "Timesheets, crew assignments, skill tracking, safety certifications",
+        },
+        {
+          name: "Materials & Inventory",
+          description:
+            "Stock levels, supplier management, delivery tracking, waste monitoring",
+        },
+        {
+          name: "Document Management",
+          description:
+            "Blueprints, permits, contracts, RFIs, change orders - all centralized",
+        },
+        {
+          name: "Financial Tracking",
+          description:
+            "Project budgets, cost tracking, invoicing, expense management",
+        },
+        {
+          name: "Safety & Compliance",
+          description:
+            "Incident reporting, safety inspections, regulatory compliance, audit trails",
+        },
       ],
-      note: "These 9 core modules are included in the MVP. The final product will feature 70+ comprehensive modules.",
+      note: "These 10 core construction modules are included in the MVP. Full system will include 70+ modules.",
     },
     // Roadmap Section
     roadmap: {
-      title: "ROADMAP:",
-      titleHighlight: "12-16 MONTHS TO COMPLETE MVP",
-      subtitle: "Structured development timeline with parallel execution",
+      title: "DEVELOPMENT",
+      titleHighlight: "ROADMAP",
+      subtitle:
+        "From foundation to enterprise-grade construction management system",
       timeline: {
         title: "Product Launch Timeline",
         closedAlpha: {
-          date: "May 15, 2026",
+          date: "July 2026",
           label: "CLOSED ALPHA",
           description: "Limited access for early testers",
         },
         openBeta: {
-          date: "August 1, 2026",
+          date: "September 2026",
           label: "OPEN BETA",
           description: "Public testing phase begins",
         },
         mvp: {
-          date: "January 1, 2027",
+          date: "January 2027",
           label: "MVP LAUNCH",
           description: "Full product release",
         },
@@ -142,49 +238,72 @@ export const translations = {
       phases: [
         {
           phase: "Phase 1",
-          name: "CORE BASE",
-          duration: "0-6/8 months",
+          name: "CORE FOUNDATION",
+          duration: "Q1 2026 - COMPLETED",
           features: [
-            "Complete system foundation",
-            "Database & ORM",
-            "Authentication & Security",
-            "Views & UI",
-            "REST API",
-            "Native AI",
+            "Multi-tenant architecture",
+            "AI engine (4-layer system)",
+            "Authentication & permissions",
+            "Database & API infrastructure",
           ],
         },
         {
           phase: "Phase 2",
-          name: "CRM APP",
-          duration: "1-2 months",
-          features: ["Complete CRM Module", "Leads & Opportunities", "Marketing Automation"],
+          name: "CONSTRUCTION MODULES",
+          duration: "Q2 2026 - CURRENT",
+          features: [
+            "Projects module",
+            "Quality Control (digital inspections)",
+            "Equipment Management",
+            "Document Management",
+          ],
         },
         {
           phase: "Phase 3",
-          name: "SALES APP",
-          duration: "1-2 months",
-          features: ["Complete Sales Module", "Quotes & Orders", "Invoices & Payments"],
+          name: "IoT & FLEET",
+          duration: "Q3 2026",
+          features: [
+            "IoT basic integration",
+            "Fleet tracking (GPS)",
+            "Workforce timesheets",
+            "Materials & Inventory",
+          ],
         },
         {
           phase: "Phase 4",
-          name: "INVENTORY APP",
-          duration: "1-2 months",
-          features: ["Complete Inventory Module", "Warehouses & Stock", "Batches & Serial Numbers"],
+          name: "ADVANCED IoT",
+          duration: "Q4 2026",
+          features: [
+            "Vision-based monitoring (analog gauges)",
+            "Sensor marketplace integration",
+            "Predictive maintenance AI",
+            "Equipment automation triggers",
+          ],
         },
         {
           phase: "Phase 5",
-          name: "PURCHASE APP",
-          duration: "1-2 months",
-          features: ["Complete Purchase Module", "Requisitions & Orders", "Supplier Management"],
+          name: "ENTERPRISE & COMPLIANCE",
+          duration: "Q1 2027",
+          features: [
+            "Multi-project portfolio management",
+            "Advanced financial analytics",
+            "ISO 9001 quality templates",
+            "Portuguese tax authority integration (SAF-T)",
+          ],
         },
         {
           phase: "Phase 6",
-          name: "ACCOUNTING APP",
-          duration: "1-2 months",
-          features: ["Complete Accounting Module", "Financial Management", "Advanced Reporting"],
+          name: "MVP LAUNCH",
+          duration: "January 2027",
+          features: [
+            "All modules integrated",
+            "Mobile app (iOS/Android)",
+            "ERP integrations (SAP, Oracle)",
+            "Full production release",
+          ],
         },
       ],
-      note: "Parallel development after Phase 1 accelerates time to market",
+      note: "Structured development with focus on construction-specific features and IoT integration",
     },
     // Tech Stack Section
     techStack: {
@@ -192,7 +311,11 @@ export const translations = {
       titleHighlight: "CUTTING-EDGE TECHNOLOGY",
       patentTitle: "PATENTED ARCHITECTURE",
       quote: "Unique confidence-based escalation system",
-      metrics: ["Over 150,000 lines of code", "16 autonomous analysis modules", "100+ intelligent analysis functions"],
+      metrics: [
+        "Built for Construction Workflows",
+        "AI Analyzes Photos, Sensors & Gauges",
+        "IoT Ready for Legacy Equipment",
+      ],
       badge: "Open Source & Privacy-First",
       dateNote: "Features implemented as of November 27, 2025",
     },
@@ -230,22 +353,26 @@ export const translations = {
           {
             icon: "Gift",
             title: "Exclusive Discounts",
-            description: "Alpha testers get 30% off first 2 years. Beta testers get 10% off first year.",
+            description:
+              "Alpha testers get 30% off first 2 years. Beta testers get 10% off first year.",
           },
           {
             icon: "Zap",
             title: "Priority Support",
-            description: "Dedicated support channel with faster response times for all early testers.",
+            description:
+              "Dedicated support channel with faster response times for all early testers.",
           },
           {
             icon: "Trophy",
             title: "Founder Status",
-            description: "Recognized as a founding user with exclusive badge and lifetime perks.",
+            description:
+              "Recognized as a founding user with exclusive badge and lifetime perks.",
           },
           {
             icon: "Target",
             title: "Shape the Product",
-            description: "Your feedback directly influences features and roadmap priorities.",
+            description:
+              "Your feedback directly influences features and roadmap priorities.",
           },
         ],
         note: "Discounts only apply to annual or 2-year payment plans (not available for monthly billing). Alpha testers must commit to 2-year plan for 30% discount. Beta testers must commit to annual plan for 10% discount. Discounts apply to active participants who provide meaningful feedback.",
@@ -259,11 +386,17 @@ export const translations = {
     team: {
       title: "MEET THE",
       titleHighlight: "DEVELOPMENT TEAM",
-      subtitle: "Experienced engineers building the future of autonomous ERP systems",
+      subtitle:
+        "Experienced engineers building the future of autonomous ERP systems",
       members: [
         {
           name: "Bruno Coelho",
-          roles: ["Founder", "AI Engineer / ML Engineer", "Data Scientist / Database Architect", "Full-Stack Engineer"],
+          roles: [
+            "Founder",
+            "AI Engineer / ML Engineer",
+            "Data Scientist / Database Architect",
+            "Full-Stack Engineer",
+          ],
           experience: "2+ years",
           yearJoined: "Since 2023",
           bio: "Full-stack developer specializing in AI integration and enterprise systems. Leading the development of CUBIX's autonomous architecture.",
@@ -279,73 +412,87 @@ export const translations = {
     pricing: {
       title: "FLEXIBLE",
       titleHighlight: "PLANS",
-      titleEnd: "FOR YOUR BUSINESS",
-      subtitle: "All plans include 3 users as base. Scale to unlimited users by adjusting your monthly fee.",
+      titleEnd: "FOR YOUR PROJECTS",
+      subtitle:
+        "Choose the deployment that fits your construction company's needs",
       tiers: [
         {
-          name: "SaaS",
-          subtitle: "Shared Infrastructure",
+          name: "SaaS (Cloud)",
+          subtitle: "Cloud-hosted solution",
           features: [
-            "Base: 3 users included",
-            "Scale to unlimited users",
-            "All modules included",
-            "Full support",
-            "Monthly updates",
-            "AI Support (3 layers: Support, Central, DevOps)",
-            "No structural AI (shared environment)",
+            "Up to X active projects",
+            "Unlimited users",
+            "50GB storage (documents/photos)",
+            "GPS tracking for Y vehicles",
+            "Z IoT sensor connections",
+            "Basic AI analytics",
+            "Email support",
           ],
         },
         {
-          name: "SERVER HOSTING",
-          subtitle: "Dedicated VPS",
+          name: "Self-Hosted",
+          subtitle: "Complete Control",
           features: [
-            "Base: 3 users included",
-            "Scale to unlimited users",
-            "All modules included",
-            "Full support",
-            "Monthly updates",
-            "Custom development available",
-            "Structural AI (All 4 AI layers including Local)",
-            "Dedicated server resources",
+            "Unlimited projects",
+            "Unlimited users",
+            "Unlimited storage (your server)",
+            "Unlimited vehicles/sensors",
+            "Full AI capabilities",
+            "White-label options",
+            "Priority support + training",
           ],
         },
       ],
       cta: "Contact Us",
       alert:
-        "MVP includes Local AI and Central AI layers. DevOps and Support AI layers will be added in the full product launch. Until then, the Central AI layer handles DevOps operations and has full capacity to do so.",
+        "Pricing details coming Q2 2026. Both plans include all core construction modules: Projects, Quality Control, IoT Integration, Fleet Tracking, and more.",
     },
     // Demo Section
     demo: {
-      title: "SIGN UP FOR FREE",
-      titleHighlight: "MVP ACCESS",
-      subtitle: "Join early adopters and be the first to experience CUBIX's AI-powered business management",
+      title: "SCHEDULE YOUR FREE",
+      titleHighlight: "CONSTRUCTION DEMO",
+      subtitle:
+        "See how CUBIX can transform your construction project management",
       form: {
         fullName: "Full Name",
         email: "Business Email",
         company: "Company",
         phone: "Phone",
-        employees: "Number of Employees",
-        comments: "Comments",
-        commentsPlaceholder: "Tell us about your needs...",
+        employees: "Company Size",
+        program: "Program",
+        comments:
+          "Number of Active Projects / Current Software Used (optional)",
+        commentsPlaceholder:
+          "Tell us about your projects and current software...",
         privacy: "I accept the privacy policy",
-        submit: "Sign up for Your Free MVP",
+        submit: "Schedule Your Free Demo",
+        submitAlpha: "Join Closed Alpha",
+        submitBeta: "Join Open Beta",
+        submitMVP: "Join MVP Launch",
         submitting: "Sending...",
         required: "*",
         selectPlaceholder: "Select...",
         employeeOptions: {
-          "1-10": "1-10",
-          "11-50": "11-50",
-          "51-200": "51-200",
-          "200+": "200+",
+          "1-10": "1-10 employees",
+          "11-50": "11-50 employees",
+          "51-200": "51-200 employees",
+          "200+": "200+ employees",
+        },
+        programOptions: {
+          placeholder: "Select program...",
+          alpha: "Closed Alpha (July 2026)",
+          beta: "Open Beta (September 2026)",
+          mvp: "MVP Launch (January 2027)",
         },
         securityNote: "Your data is secure",
         contactTime: "Contact within 24h",
-        alert: "⚠️ Limited MVP slots available - early adopters get exclusive benefits",
+        alert:
+          "⚠️ Limited MVP slots available - early adopters get exclusive benefits",
       },
       success: {
-        title: "Welcome to CUBIX MVP!",
+        title: "Welcome to CUBIX Construction!",
         message:
-          "Thank you for signing up! You'll receive detailed information about our Alpha, Beta, and MVP programs. Our team will contact you within 24 hours with program details and next steps.",
+          "Thank you for your interest! You'll receive detailed information about our construction management system. Our team will contact you within 24 hours to schedule your personalized demo.",
       },
     },
     // FAQ Section
@@ -354,50 +501,45 @@ export const translations = {
       titleHighlight: "QUESTIONS",
       items: [
         {
-          question: "Does CUBIX really work without consultants?",
+          question: "How is Cubix different from Procore or Primavera?",
           answer:
-            "CUBIX doesn't require consultants for implementation, unlike traditional ERPs. We offer optional consulting services if you prefer human contact, but we also have integrated artificial intelligence that can answer any question in the best possible way. This is a competitive advantage because consulting is optional, not mandatory. Companies can save money by using the built-in AI instead of paying for expensive consulting fees.",
+            "Cubix is built AI-first with native IoT integration. Unlike traditional systems that bolt-on features, our architecture is designed for automation from the ground up. Plus, we work with legacy machinery - no expensive retrofits needed. We focus on practical construction solutions, not generic business software adapted for construction.",
         },
         {
-          question: "If I want to switch from an ERP that I already have to CUBIX, what are my advantages?",
+          question: "Can it really integrate with old analog machinery?",
           answer:
-            "We have a system that can run simultaneously with your existing ERP, allowing you to test CUBIX at the same time. All data created in both CUBIX and your other ERP is shared between the two systems. We capture all data from both sides and sync it automatically. For example, create an invoice in either system and it appears in both. Your ERP needs to be compatible with webhook or API connections for this integration. This way, you can test CUBIX thoroughly before fully migrating.",
+            "Yes! Using computer vision AI, we can read analog gauges, manometers, and sensors from camera feeds. We also support simple IoT sensors for movement detection and basic monitoring on equipment from the 1980s-90s. No need to replace your existing machinery - we make it smart.",
         },
         {
-          question: "How does local AI vs central AI work?",
+          question: "What about data privacy and security?",
           answer:
-            "CUBIX uses a unique 4-tier confidence-based escalation system. Simple queries (70%) are handled by Local AI (<100ms). More complex issues escalate to Support AI, then Central AI, and finally DevOps AI for code-level fixes. This ensures optimal response time while maintaining high accuracy.",
+            "Complete data isolation per company. Your project data never mixes with other clients. We're GDPR compliant and use enterprise-grade encryption. See our 130+ security rules documentation. For maximum control, choose our self-hosted option.",
         },
         {
-          question: "How long does implementation take?",
+          question: "Do I need to replace my existing ERP/accounting software?",
           answer:
-            "Implementation is significantly faster than traditional ERPs. Basic setup can be completed in days, not months. The AI assists with data migration, configuration, and user training. Most companies are operational within 2-4 weeks, compared to 6-12 months for legacy systems.",
+            "No! Cubix focuses on construction operations (projects, quality, IoT, fleet). We integrate with your existing accounting software (SAP, Oracle, PHC, Primavera) via APIs. Run both systems simultaneously during testing, with automatic data synchronization.",
         },
         {
-          question: "Is my data secure?",
+          question: "How does GPS fleet tracking work?",
           answer:
-            "Absolutely. CUBIX follows enterprise-grade security standards with end-to-end encryption, role-based access control, and regular security audits. We offer both cloud and on-premise deployment options. All AI processing respects your data privacy, and we never train on your proprietary information.",
+            "Simple GPS devices install in vehicles. We also support OBD-II integration for fuel consumption, engine diagnostics, and real-time cost tracking per project. Monitor your entire fleet from a single dashboard with route history and geofencing alerts.",
         },
         {
-          question: "Can I integrate with existing systems?",
+          question: "What's included in the MVP launch?",
           answer:
-            "Yes, CUBIX offers a comprehensive REST API and supports standard integration protocols. Our AI can help map and migrate data from existing systems including SAP, Oracle, Odoo, and custom solutions. We also provide pre-built connectors for common business tools.",
-        },
-        {
-          question: "What's the difference vs SAP/Oracle/Odoo?",
-          answer:
-            "Traditional ERPs bolt AI on as an assistant - it still requires human intervention. CUBIX has AI in its structural core, enabling true autonomy. We achieve 90% autonomous operation, <1 second support response, 30-minute MTTR vs 4+ hours, and eliminate consulting costs entirely.",
+            "Projects, Quality Control (digital inspections), IoT basics (sensors + alerts), GPS Fleet Tracking, and Workforce Timesheets. Everything needed to start managing construction digitally. Full roadmap includes advanced IoT, predictive maintenance, and enterprise features by Q1 2027.",
         },
       ],
       cta: "Still have questions? Contact us",
     },
     // Footer
     footer: {
-      tagline: "The first ERP with AI that works autonomously",
+      tagline: "The first system built for the construction industry",
       product: {
         title: "PRODUCT",
-        features: "Features",
-        technology: "Technology",
+        features: "Construction Features",
+        technology: "IoT Technology",
         pricing: "Pricing",
       },
       company: {
@@ -412,11 +554,12 @@ export const translations = {
         terms: "Terms of Service",
         cookies: "Cookies",
       },
-      copyright: "© 2025 CUBIX ERP. All rights reserved.",
+      copyright: "© 2025 CUBIX Construction. All rights reserved.",
     },
     // Construction Banner
     banner: {
-      message: "🚧 This page is currently under development. Features and content may change.",
+      message:
+        "🚧 This page is currently under development. Features and content may change.",
     },
     underConstruction: {
       title: "PAGE UNDER",
@@ -441,57 +584,98 @@ export const translations = {
     // Hero Section
     hero: {
       patentBadge: "ARQUITETURA PATENTEADA",
-      title: "O PRIMEIRO ERP COM IA QUE",
-      titleHighlight: "FUNCIONA AUTONOMAMENTE",
-      titleEnd: ", NÃO APENAS ASSISTE",
-      subtitle: "90% de Autonomia",
-      subtitleFeatures: "Correção Automática de Bugs • Suporte Instantâneo 24/7 • Zero Consultores",
+      title: "O PRIMEIRO SISTEMA CONSTRUÍDO PARA A",
+      titleHighlight: "INDÚstRIA DA CONSTRUÇÃO",
+      titleEnd: "",
+      subtitle:
+        "Gestão automatizada de projetos com integração IoT e controlo de qualidade com IA",
+      subtitleFeatures:
+        "IoT Pronto • Controlo de Qualidade • Rastreamento de Frota GPS • Integração de Equipamento Legado",
       ctaPrimary: "Inscrever-se no MVP gratuito",
       ctaSecondary: "Ver Como Funciona",
-      imageAlt: "Painel CUBIX ERP",
+      imageAlt: "Painel CUBIX Construção",
     },
     // Problem Section
     problem: {
-      title: "OS ERPs TRADICIONAIS SÃO",
-      titleHighlight: "OBSOLETOS",
+      title: "O SOFTWARE DE CONSTRUÇÃO TRADICIONAL É",
+      titleHighlight: "DESATUALIZADO",
       painPoints: [
-        { title: "Suporte baseado em tickets", description: "Dias de espera para correções simples" },
-        { title: "Resolução de bugs", description: "Mais de 4 horas por incidente" },
-        { title: "Consultores caros", description: "100-200€/hora de custos contínuos" },
-        { title: "IA como complemento", description: "Sem autonomia real, apenas assistência" },
-        { title: "Zero otimização proativa", description: "Sistemas reativos, não preditivos" },
+        {
+          title: "Sem integração IoT",
+          description: "Não consegue conectar maquinária legada",
+        },
+        {
+          title: "Controlo de qualidade manual",
+          description: "Clipboard para digital - ineficiente",
+        },
+        {
+          title: "Licenciamento caro por utilizador",
+          description: "Custos aumentam com cada novo utilizador",
+        },
+        {
+          title: "Rastreamento de frota fraco",
+          description: "Sem monitorização de equipamento em tempo real",
+        },
+        {
+          title: "Configuração complexa",
+          description: "Meses de consultores e formação",
+        },
       ],
       quote:
-        "SAP, Oracle, Odoo... têm IA. Mas é um ASSISTENTE que precisa de humanos. Temos um AGENTE que funciona autonomamente.",
+        "Odoo, SAP, Procore, Primavera... são construídos para negócios genéricos. CUBIX é construído especificamente para construção com IoT, controlo de qualidade e gestão de frota desde o primeiro dia.",
     },
     // Solution Section
     solution: {
       title: "CUBIX:",
       titleHighlight: "IA ESTRUTURAL",
       titleEnd: ", NÃO COMPLEMENTO",
-      subtitle: "Construído de raiz com IA no seu núcleo, não como um complemento",
+      subtitle:
+        "Construído de raiz com IA no seu núcleo, não como um complemento",
       features: [
-        { title: "90% de Autonomia", description: "A IA gere operações de ponta a ponta sem intervenção humana" },
         {
-          title: "Bugs Corrigem-se Automaticamente",
-          description: "Sistema auto-reparador deteta e resolve problemas automaticamente",
+          title: "IoT para Maquinária Legada",
+          description:
+            "Integre equipamento analógico antigo usando visão computacional e sensores simples - sem retrofits caros",
         },
-        { title: "Suporte 24/7 <1seg", description: "Respostas instantâneas da IA, sem tickets, sem espera" },
-        { title: "Zero Consultores", description: "Poupe 100-200€/hora com operações autónomas" },
-        { title: "MTTR: 30min vs 4h", description: "8x mais rápido no tempo médio de resolução" },
-        { title: "Sistema Auto-Evolutivo", description: "Aprende e otimiza continuamente a partir dos seus dados" },
+        {
+          title: "Controlo de Qualidade Automatizado",
+          description:
+            "Inspeções digitais com documentação fotográfica, deteção automática de problemas e relatórios instantâneos de conformidade",
+        },
+        {
+          title: "Rastreamento Inteligente de Projetos",
+          description:
+            "Estado do projeto em tempo real, alocação de recursos e previsões de cronograma alimentadas por análise de IA",
+        },
+        {
+          title: "Gestão de Frota e Equipamento",
+          description:
+            "Rastreamento GPS, monitorização de combustível via OBD-II, agendamento de manutenção e análise de custos por projeto",
+        },
+        {
+          title: "Monitorização Baseada em Visão",
+          description:
+            "IA lê manómetros analógicos, deteta perigos de segurança, monitoriza níveis de materiais - tudo a partir de feeds de câmera",
+        },
+        {
+          title: "Manutenção Preditiva",
+          description:
+            "Previna falhas de equipamento antes que aconteçam - IA analisa dados de sensores e padrões de uso",
+        },
       ],
     },
     // Architecture Section
     architecture: {
       title: "ARQUITETURA",
       titleHighlight: "IA DE 4 CAMADAS MULTINÍVEL",
-      subtitle: "Sistema de escalamento baseado em confiança encaminha consultas para a camada ideal de IA",
+      subtitle:
+        "Sistema de escalamento baseado em confiança encaminha consultas para a camada ideal de IA",
       layers: [
         {
           name: "IA LOCAL",
           model: "DeepSeek R1 8B",
-          description: "70% das consultas resolvidas localmente, <100ms tempo de resposta",
+          description:
+            "70% das consultas resolvidas localmente, <100ms tempo de resposta",
         },
         {
           name: "IA DE SUPORTE",
@@ -506,7 +690,8 @@ export const translations = {
         {
           name: "IA DEVOPS",
           model: "DeepSeek Coder 33B",
-          description: "Auto-reparação de código, resolução autónoma, implementação contínua",
+          description:
+            "Auto-reparação de código, resolução autónoma, implementação contínua",
         },
       ],
       cta: "Ver Demonstração Técnica",
@@ -514,59 +699,110 @@ export const translations = {
     // Comparison Section
     comparison: {
       title: "CUBIX vs",
-      titleEnd: "SAP/ORACLE/ODOO",
+      titleEnd: "SOFTWARE DE CONSTRUÇÃO TRADICIONAL",
       tableHeaders: {
         feature: "Funcionalidade",
-        traditional: "ERPs Tradicionais",
-        cubix: "CUBIX",
+        traditional: "Odoo, SAP, Procore, Primavera",
+        cubix: "CUBIX Construção",
       },
       features: [
-        { feature: "IA nativa no núcleo" },
-        { feature: "Autonomia total (90%)" },
-        { feature: "Bugs auto-reparadores" },
-        { feature: "Suporte instantâneo (<1seg)" },
-        { feature: "Zero consultores necessários" },
-        { feature: "Tempo de resposta", traditional: "Horas/Dias", cubix: "<1 segundo" },
-        { feature: "Tempo médio de reparação", traditional: "Mais de 4 horas", cubix: "30 minutos" },
+        { feature: "Integração IoT para maquinária legada" },
+        { feature: "Controlo de qualidade digital com auto-relatório" },
+        { feature: "Construído para fluxos de trabalho de construção" },
+        { feature: "Preços acessíveis baseados em projeto" },
+        { feature: "Insights de projeto alimentados por IA" },
+        {
+          feature: "Tempo de configuração",
+          traditional: "Meses com consultores",
+          cubix: "Plug-and-play, funciona imediatamente",
+        },
+        {
+          feature: "Rastreamento de frota/equipamento",
+          traditional: "Limitado ou complemento",
+          cubix: "Integração GPS + OBD-II incluída",
+        },
       ],
     },
     // Modules Section
     modules: {
       title: "MÓDULOS",
-      titleHighlight: "INCLUÍDOS NO MVP",
-      subtitle: "Funcionalidades essenciais prontas para o lançamento do seu negócio",
+      titleHighlight: "PRINCIPAIS DE CONSTRUÇÃO",
+      subtitle:
+        "Gestão completa do ciclo de vida do projeto construída para a indústria da construção",
       items: [
-        { name: "CRM e Leads", description: "Gestão de relacionamento com clientes e rastreamento de leads" },
-        { name: "Vendas e Faturação", description: "Ciclo completo de vendas e faturação automatizada" },
-        { name: "Encomendas de Compra", description: "Aprovisionamento e gestão de fornecedores" },
-        { name: "Gestão de Inventário", description: "Controlo de stock em tempo real e armazenamento" },
-        { name: "Contabilidade", description: "Gestão financeira completa e relatórios" },
-        { name: "Relatórios com IA", description: "Análises inteligentes e previsões" },
-        { name: "Fluxos Automatizados", description: "Automação personalizada de processos de negócio" },
-        { name: "Permissões e Segurança", description: "Acesso baseado em funções e proteção de dados" },
-        { name: "Multi-idioma", description: "Suporte internacional e localização" },
+        {
+          name: "Projetos",
+          description:
+            "Gestão completa do ciclo de vida do projeto - planeamento, execução, rastreamento e encerramento",
+        },
+        {
+          name: "Controlo de Qualidade",
+          description:
+            "Inspeções digitais, documentação fotográfica, checklists de conformidade, relatórios automatizados",
+        },
+        {
+          name: "Integração IoT",
+          description:
+            "Monitorização de sensores, integração de maquinária legada, alertas em tempo real, monitorização baseada em câmera",
+        },
+        {
+          name: "Rastreamento de Frota",
+          description:
+            "Rastreamento GPS de veículos, otimização de rotas, monitorização de combustível, agendamento de manutenção",
+        },
+        {
+          name: "Gestão de Equipamento",
+          description:
+            "Rastreamento de ativos, registos de uso, histórico de manutenção, coordenação de aluguer",
+        },
+        {
+          name: "Gestão de Força de Trabalho",
+          description:
+            "Folhas de ponto, atribuições de equipa, rastreamento de competências, certificações de segurança",
+        },
+        {
+          name: "Materiais e Inventário",
+          description:
+            "Níveis de stock, gestão de fornecedores, rastreamento de entregas, monitorização de desperdícios",
+        },
+        {
+          name: "Gestão de Documentos",
+          description:
+            "Plantas, licenças, contratos, RFIs, ordens de alteração - tudo centralizado",
+        },
+        {
+          name: "Rastreamento Financeiro",
+          description:
+            "Orçamentos de projeto, rastreamento de custos, faturação, gestão de despesas",
+        },
+        {
+          name: "Segurança e Conformidade",
+          description:
+            "Relatório de incidentes, inspeções de segurança, conformidade regulamentar, trilhas de auditoria",
+        },
       ],
-      note: "Estes 9 módulos principais estão incluídos no MVP. O produto final terá mais de 70 módulos abrangentes.",
+      note: "Estes 10 módulos principais de construção estão incluídos no MVP. O sistema completo incluirá mais de 70 módulos.",
     },
     // Roadmap Section
     roadmap: {
-      title: "ROTEIRO:",
-      titleHighlight: "12-16 MESES PARA CONCLUIR O MVP",
-      subtitle: "Cronograma de desenvolvimento estruturado com execução paralela",
+      title: "ROTEIRO DE",
+      titleHighlight: "DESENVOLVIMENTO",
+      subtitle:
+        "Da fundação ao sistema de gestão de construção de nível empresarial",
       timeline: {
         title: "Cronograma de Lançamento do Produto",
         closedAlpha: {
-          date: "15 de Maio de 2026",
+          date: "Julho 2026",
           label: "ALPHA FECHADO",
           description: "Acesso limitado para testadores iniciais",
         },
         openBeta: {
-          date: "1 de Agosto de 2026",
+          date: "Setembro 2026",
           label: "BETA ABERTO",
           description: "Fase de testes públicos começa",
         },
         mvp: {
-          date: "1 de Janeiro de 2027",
+          date: "Janeiro 2027",
           label: "LANÇAMENTO MVP",
           description: "Lançamento completo do produto",
         },
@@ -574,49 +810,72 @@ export const translations = {
       phases: [
         {
           phase: "Fase 1",
-          name: "BASE PRINCIPAL",
-          duration: "0-6/8 meses",
+          name: "FUNDAÇÃO PRINCIPAL",
+          duration: "Q1 2026 - CONCLUÍDO",
           features: [
-            "Base completa do sistema",
-            "Base de dados e ORM",
-            "Autenticação e Segurança",
-            "Visualizações e IU",
-            "API REST",
-            "IA Nativa",
+            "Arquitetura multi-tenant",
+            "Motor de IA (sistema de 4 camadas)",
+            "Autenticação e permissões",
+            "Infraestrutura de base de dados e API",
           ],
         },
         {
           phase: "Fase 2",
-          name: "APP CRM",
-          duration: "1-2 meses",
-          features: ["Módulo CRM Completo", "Leads e Oportunidades", "Automação de Marketing"],
+          name: "MÓDULOS DE CONSTRUÇÃO",
+          duration: "Q2 2026 - ATUAL",
+          features: [
+            "Módulo de projetos",
+            "Controlo de Qualidade (inspeções digitais)",
+            "Gestão de Equipamento",
+            "Gestão de Documentos",
+          ],
         },
         {
           phase: "Fase 3",
-          name: "APP VENDAS",
-          duration: "1-2 meses",
-          features: ["Módulo de Vendas Completo", "Orçamentos e Encomendas", "Faturas e Pagamentos"],
+          name: "IoT E FROTA",
+          duration: "Q3 2026",
+          features: [
+            "Integração IoT básica",
+            "Rastreamento de frota (GPS)",
+            "Folhas de ponto da força de trabalho",
+            "Materiais e Inventário",
+          ],
         },
         {
           phase: "Fase 4",
-          name: "APP INVENTÁRIO",
-          duration: "1-2 meses",
-          features: ["Módulo de Inventário Completo", "Armazéns e Stock", "Lotes e Números de Série"],
+          name: "IoT AVANÇADO",
+          duration: "Q4 2026",
+          features: [
+            "Monitorização baseada em visão (manómetros analógicos)",
+            "Integração de marketplace de sensores",
+            "IA de manutenção preditiva",
+            "Gatilhos de automação de equipamento",
+          ],
         },
         {
           phase: "Fase 5",
-          name: "APP COMPRAS",
-          duration: "1-2 meses",
-          features: ["Módulo de Compras Completo", "Requisições e Encomendas", "Gestão de Fornecedores"],
+          name: "EMPRESA E CONFORMIDADE",
+          duration: "Q1 2027",
+          features: [
+            "Gestão de portfólio multi-projeto",
+            "Análises financeiras avançadas",
+            "Modelos de qualidade ISO 9001",
+            "Integração com autoridade fiscal portuguesa (SAF-T)",
+          ],
         },
         {
           phase: "Fase 6",
-          name: "APP CONTABILIDADE",
-          duration: "1-2 meses",
-          features: ["Módulo de Contabilidade Completo", "Gestão Financeira", "Relatórios Avançados"],
+          name: "LANÇAMENTO MVP",
+          duration: "Janeiro 2027",
+          features: [
+            "Todos os módulos integrados",
+            "App móvel (iOS/Android)",
+            "Integrações ERP (SAP, Oracle)",
+            "Lançamento completo em produção",
+          ],
         },
       ],
-      note: "Desenvolvimento paralelo após a Fase 1 acelera o tempo até ao mercado",
+      note: "Desenvolvimento estruturado com foco em recursos específicos de construção e integração IoT",
     },
     // Tech Stack Section
     techStack: {
@@ -625,9 +884,9 @@ export const translations = {
       patentTitle: "ARQUITETURA PATENTEADA",
       quote: "Sistema único de escalamento baseado em confiança",
       metrics: [
-        "Mais de 150.000 linhas de código",
-        "16 módulos de análise autónomos",
-        "Mais de 100 funções de análise inteligente",
+        "Construído para Fluxos de Trabalho de Construção",
+        "IA Analisa Fotos, Sensores e Manómetros",
+        "IoT Pronto para Equipamento Legado",
       ],
       badge: "Código Aberto e Privacidade em Primeiro Lugar",
       dateNote: "Funcionalidades implementadas em 27 de Novembro de 2025",
@@ -635,11 +894,12 @@ export const translations = {
     earlyAccess: {
       title: "JUNTE-SE AO NOSSO",
       titleHighlight: "PROGRAMA DE ACESSO ANTECIPADO",
-      subtitle: "Seja dos primeiros a experimentar o CUBIX e moldar o seu futuro",
+      subtitle:
+        "Seja dos primeiros a experimentar o CUBIX e moldar o seu futuro",
       tiers: [
         {
           name: "ALPHA FECHADO",
-          date: "15 de Maio de 2026",
+          date: "Julho 2026",
           badge: "Vagas Limitadas",
           features: [
             "Acesso exclusivo em primeira mão",
@@ -650,7 +910,7 @@ export const translations = {
         },
         {
           name: "TESTE BETA",
-          date: "1 de Agosto de 2026",
+          date: "Setembro 2026",
           badge: "Teste Público",
           features: [
             "Acesso antecipado a funcionalidades",
@@ -678,12 +938,14 @@ export const translations = {
           {
             icon: "Trophy",
             title: "Status de Fundador",
-            description: "Reconhecido como utilizador fundador com distintivo exclusivo e benefícios vitalícios.",
+            description:
+              "Reconhecido como utilizador fundador com distintivo exclusivo e benefícios vitalícios.",
           },
           {
             icon: "Target",
             title: "Moldar o Produto",
-            description: "O seu feedback influencia diretamente as funcionalidades e prioridades do roteiro.",
+            description:
+              "O seu feedback influencia diretamente as funcionalidades e prioridades do roteiro.",
           },
         ],
         note: "Os descontos aplicam-se apenas a planos de pagamento anual ou de 2 anos (não disponível para faturação mensal). Testadores Alpha devem comprometer-se com o plano de 2 anos para receberem 30% de desconto. Testadores Beta devem comprometer-se com o plano anual para receberem 10% de desconto. Os descontos aplicam-se a participantes ativos que fornecem feedback significativo.",
@@ -697,7 +959,8 @@ export const translations = {
     team: {
       title: "CONHEÇA A",
       titleHighlight: "EQUIPA DE DESENVOLVIMENTO",
-      subtitle: "Engenheiros experientes a construir o futuro dos sistemas ERP autónomos",
+      subtitle:
+        "Engenheiros experientes a construir o futuro dos sistemas ERP autónomos",
       members: [
         {
           name: "Bruno Coelho",
@@ -722,74 +985,87 @@ export const translations = {
     pricing: {
       title: "PLANOS",
       titleHighlight: "FLEXÍVEIS",
-      titleEnd: "PARA O SEU NEGÓCIO",
+      titleEnd: "PARA OS SEUS PROJETOS",
       subtitle:
-        "Todos os planos incluem 3 utilizadores base. Escale até utilizadores ilimitados ajustando a mensalidade.",
+        "Escolha a implementação que se adequa às necessidades da sua empresa de construção",
       tiers: [
         {
-          name: "SaaS",
-          subtitle: "Infraestrutura Partilhada",
+          name: "SaaS (Cloud)",
+          subtitle: "Solução hospedada na nuvem",
           features: [
-            "Base: 3 utilizadores incluídos",
-            "Escala até utilizadores ilimitados",
-            "Todos os módulos incluídos",
-            "Suporte completo",
-            "Atualizações mensais",
-            "IA de Suporte (3 camadas: Suporte, Central, DevOps)",
-            "Sem IA estrutural (ambiente partilhado)",
+            "Até X projetos ativos",
+            "Utilizadores ilimitados",
+            "50GB de armazenamento (documentos/fotos)",
+            "Rastreamento GPS para Y veículos",
+            "Z conexões de sensores IoT",
+            "Análises de IA básicas",
+            "Suporte por email",
           ],
         },
         {
-          name: "SERVER HOSTING",
-          subtitle: "VPS Dedicado",
+          name: "Auto-Hospedado",
+          subtitle: "Controlo Completo",
           features: [
-            "Base: 3 utilizadores incluídos",
-            "Escala até utilizadores ilimitados",
-            "Todos os módulos incluídos",
-            "Suporte completo",
-            "Atualizações mensais",
-            "Desenvolvimento personalizado disponível",
-            "IA Estrutural (Todas as 4 camadas de IA incluindo Local)",
-            "Recursos de servidor dedicados",
+            "Projetos ilimitados",
+            "Utilizadores ilimitados",
+            "Armazenamento ilimitado (seu servidor)",
+            "Veículos/sensores ilimitados",
+            "Capacidades completas de IA",
+            "Opções white-label",
+            "Suporte prioritário + formação",
           ],
         },
       ],
       cta: "Contacte-nos",
       alert:
-        "O MVP inclui as camadas IA Local e IA Central. As camadas IA DevOps e IA de Suporte serão adicionadas no lançamento completo do produto. Até lá, a camada IA Central trata das operações DevOps e tem capacidade total para o fazer.",
+        "Detalhes de preços chegam no Q2 2026. Ambos os planos incluem todos os módulos principais de construção: Projetos, Controlo de Qualidade, Integração IoT, Rastreamento de Frota e muito mais.",
     },
     // Demo Section
     demo: {
-      title: "INSCREVA-SE GRATUITAMENTE",
-      titleHighlight: "ACESSO AO MVP",
-      subtitle: "Junte-se aos early adopters e seja o primeiro a experimentar a gestão empresarial com IA do CUBIX",
+      title: "AGENDE A SUA",
+      titleHighlight: "DEMO DE CONSTRUÇÃO GRATUITA",
+      subtitle:
+        "Veja como o CUBIX pode transformar a gestão dos seus projetos de construção",
       form: {
         fullName: "Nome Completo",
         email: "Email Empresarial",
         company: "Empresa",
         phone: "Telefone",
-        employees: "Número de Funcionários",
-        comments: "Comentários",
-        commentsPlaceholder: "Conte-nos sobre as suas necessidades...",
+        employees: "Tamanho da Empresa",
+        program: "Programa",
+        comments:
+          "Número de Projetos Ativos / Software Atual Utilizado (opcional)",
+        commentsPlaceholder:
+          "Conte-nos sobre os seus projetos e software atual...",
         privacy: "Aceito a política de privacidade",
-        submit: "Inscrever-se no Seu MVP Gratuito",
+        submit: "Agende a Sua Demo Gratuita",
+        submitAlpha: "Juntar-me à Alpha Fechada",
+        submitBeta: "Juntar-me à Beta Aberta",
+        submitMVP: "Juntar-me ao Lançamento MVP",
         submitting: "A enviar...",
         required: "*",
         selectPlaceholder: "Selecione...",
         employeeOptions: {
-          "1-10": "1-10",
-          "11-50": "11-50",
-          "51-200": "51-200",
-          "200+": "200+",
+          "1-10": "1-10 funcionários",
+          "11-50": "11-50 funcionários",
+          "51-200": "51-200 funcionários",
+          "200+": "200+ funcionários",
+        },
+        programOptions: {
+          placeholder: "Selecionar programa...",
+          alpha: "Alpha Fechada (Julho 2026)",
+          beta: "Beta Aberta (Setembro 2026)",
+          mvp: "Lançamento MVP (Janeiro 2027)",
         },
         securityNote: "Os seus dados estão seguros",
         contactTime: "Contacto dentro de 24 horas",
-        alert: "⚠️ Slots limitados de MVP disponíveis - os adoptantes antecipados obtêm benefícios exclusivos",
+        alert:
+          "⚠️ Slots limitados de MVP disponíveis - os adotantes antecipados obtêm benefícios exclusivos",
       },
       success: {
-        title: "Bem-vindo ao MVP do CUBIX!",
+        title: "Bem-vindo ao CUBIX Construção!",
         message:
-          "Obrigado por se inscrever! Irá receber informações detalhadas sobre os nossos programas Alpha, Beta e MVP. A nossa equipa contactará o dentro de 24 horas com detalhes do programa e os próximos passos.",
+          "Obrigado pelo seu interesse! Irá receber informações detalhadas sobre o nosso sistema de gestão de construção. A nossa equipa contactará o dentro de 24 horas para agendar a sua demo personalizada.",
       },
     },
     // FAQ Section
@@ -798,50 +1074,46 @@ export const translations = {
       titleHighlight: "MAIS FREQUENTES",
       items: [
         {
-          question: "O CUBIX funciona realmente sem consultores?",
+          question: "Como é que o Cubix é diferente do Procore ou Primavera?",
           answer:
-            "O CUBIX não requer consultores para implementação, ao contrário dos ERPs tradicionais. Oferecemos serviços de consultoria opcionais se preferir contacto humano, mas também temos inteligência artificial integrada que pode responder a qualquer pergunta da melhor forma possível. Esta é uma vantagem competitiva porque a consultoria é opcional, não obrigatória. As empresas podem poupar dinheiro ao usar a IA incorporada em vez de pagar por taxas caras de consultoria.",
+            "O Cubix é construído com IA em primeiro lugar com integração IoT nativa. Ao contrário dos sistemas tradicionais que adicionam funcionalidades, a nossa arquitetura é projetada para automação desde o início. Além disso, trabalhamos com maquinária legada - sem retrofits caros necessários. Focamos em soluções práticas de construção, não software de negócios genérico adaptado para construção.",
         },
         {
-          question: "Se quero mudar do ERP que já tenho para o CUBIX, quais são as minhas vantagens?",
+          question: "Pode realmente integrar com maquinária analógica antiga?",
           answer:
-            "Temos um sistema que pode funcionar simultaneamente com o seu ERP existente, permitindo-lhe testar o CUBIX ao mesmo tempo. Todos os dados criados tanto no CUBIX quanto no seu outro ERP são partilhados entre os dois sistemas. Capturamos todos os dados de ambos os lados e sincronizamos-os automaticamente. Por exemplo, crie uma fatura em qualquer um dos sistemas e ela aparece em ambos. O seu ERP precisa de ser compatível com conexões webhook ou API para esta integração. Deste modo, pode testar o CUBIX completamente antes de migrar totalmente.",
+            "Sim! Usando IA de visão computacional, podemos ler manómetros analógicos, manómetros e sensores a partir de feeds de câmera. Também suportamos sensores IoT simples para deteção de movimento e monitorização básica em equipamento dos anos 80-90. Não precisa de substituir a sua maquinária existente - nós tornamo-la inteligente.",
         },
         {
-          question: "Como funciona a IA local vs central?",
+          question: "E quanto à privacidade e segurança dos dados?",
           answer:
-            "O CUBIX utiliza um sistema único de escalamento de quatro camadas baseado em confiança. Consultas simples (70%) são tratadas pela IA Local (<100ms). Problemas mais complexos escalam para a IA de Suporte, depois para a IA Central e, finalmente, para a IA DevOps para correções de nível de código. Isto garante um tempo de resposta óptimo enquanto mantém uma alta precisão.",
+            "Isolamento completo de dados por empresa. Os dados do seu projeto nunca se misturam com outros clientes. Somos compatíveis com GDPR e usamos encriptação de nível empresarial. Veja a nossa documentação de mais de 130 regras de segurança. Para máximo controlo, escolha a nossa opção auto-hospedada.",
         },
         {
-          question: "Quanto tempo leva a implementação?",
+          question:
+            "Preciso de substituir o meu ERP/software de contabilidade existente?",
           answer:
-            "A implementação é significativamente mais rápida do que os ERPs tradicionais. A configuração básica pode ser concluída em dias, não em meses. A IA assiste na migração de dados, configuração e treino de utilizadores. A maioria das empresas está operacional dentro de 2-4 semanas, em comparação com 6-12 meses para sistemas legados.",
+            "Não! O Cubix foca em operações de construção (projetos, qualidade, IoT, frota). Integramos com o seu software de contabilidade existente (SAP, Oracle, PHC, Primavera) via APIs. Execute ambos os sistemas simultaneamente durante os testes, com sincronização automática de dados.",
         },
         {
-          question: "Os meus dados estão seguros?",
+          question: "Como funciona o rastreamento de frota GPS?",
           answer:
-            "Absolutamente. O CUBIX segue padrões de segurança empresariais com encriptação de ponta a ponta, controlo de acesso baseado em funções e auditorias de segurança regulares. Oferecemos opções de implementação em nuvem e no local. Todas as operações de IA respeitam a privacidade dos seus dados e nunca treinamos em informações proprietárias.",
+            "Dispositivos GPS simples instalam-se nos veículos. Também suportamos integração OBD-II para consumo de combustível, diagnósticos do motor e rastreamento de custos em tempo real por projeto. Monitorize toda a sua frota a partir de um único painel com histórico de rotas e alertas de geofencing.",
         },
         {
-          question: "Posso integrar com sistemas existentes?",
+          question: "O que está incluído no lançamento do MVP?",
           answer:
-            "Sim, o CUBIX oferece uma API REST abrangente e apoia protocolos de integração padrão. A IA pode ajudar a mapear e migrar dados dos seus sistemas existentes, incluindo SAP, Oracle, Odoo e soluções personalizadas. Também fornecemos conectores pré-construídos para ferramentas de negócio comuns.",
-        },
-        {
-          question: "Qual é a diferença em relação ao SAP/Oracle/Odoo?",
-          answer:
-            "Os ERPs tradicionais colam a IA como um assistente - ainda requer intervenção humana. O CUBIX tem IA no seu núcleo estrutural, permitindo verdadeira autonomia. Conseguimos 90% de operações autónomas, suporte de <1 segundo, MTTR de 30 minutos vs 4+ horas e eliminamos totalmente os custos de consultoria.",
+            "Projetos, Controlo de Qualidade (inspeções digitais), IoT básico (sensores + alertas), Rastreamento de Frota GPS e Folhas de Ponto da Força de Trabalho. Tudo o que é necessário para começar a gerir construção digitalmente. O roteiro completo inclui IoT avançado, manutenção preditiva e funcionalidades empresariais até Q1 2027.",
         },
       ],
       cta: "Ainda tem perguntas? Contacte-nos",
     },
     // Footer
     footer: {
-      tagline: "O primeiro ERP com IA que funciona autonomamente",
+      tagline: "O primeiro sistema construído para a indústria da construção",
       product: {
         title: "PRODUTO",
-        features: "Funcionalidades",
-        technology: "Tecnologia",
+        features: "Funcionalidades de Construção",
+        technology: "Tecnologia IoT",
         pricing: "Preços",
       },
       company: {
@@ -856,16 +1128,18 @@ export const translations = {
         terms: "Termos de Serviço",
         cookies: "Cookies",
       },
-      copyright: "© 2025 CUBIX ERP. Todos os direitos reservados.",
+      copyright: "© 2025 CUBIX Construção. Todos os direitos reservados.",
     },
     // Construction Banner
     banner: {
-      message: "🚧 Esta página está atualmente em desenvolvimento. As funcionalidades e o conteúdo podem mudar.",
+      message:
+        "🚧 Esta página está atualmente em desenvolvimento. As funcionalidades e o conteúdo podem mudar.",
     },
     underConstruction: {
       title: "PÁGINA EM",
       titleHighlight: "CONSTRUÇÃO",
-      subtitle: "Estamos a trabalhar arduamente para trazer-lhe esta funcionalidade",
+      subtitle:
+        "Estamos a trabalhar arduamente para trazer-lhe esta funcionalidade",
       message:
         "Esta página está atualmente em desenvolvimento. A plataforma CUBIX está em construção e novas funcionalidades estão a ser adicionadas regularmente. Obrigado pela sua paciência enquanto construímos o futuro dos sistemas ERP autónomos.",
       eta: "Conclusão esperada: Q1 2026",
@@ -885,60 +1159,98 @@ export const translations = {
     // Hero Section
     hero: {
       patentBadge: "ARQUITECTURA PATENTADA",
-      title: "EL PRIMER ERP CON IA QUE",
-      titleHighlight: "FUNCIONA AUTÓNOMAMENTE",
-      titleEnd: ", NO SOLO ASISTE",
-      subtitle: "90% de Autonomía",
-      subtitleFeatures: "Auto-Reparación de Bugs • Soporte Instantáneo 24/7 • Sin Consultores",
+      title: "EL PRIMER SISTEMA CONSTRUIDO PARA LA",
+      titleHighlight: "INDUSTRIA DE LA CONSTRUCCIÓN",
+      titleEnd: "",
+      subtitle:
+        "Gestión automatizada de proyectos con integración IoT y control de calidad con IA",
+      subtitleFeatures:
+        "IoT Listo • Control de Calidad • Seguimiento de Flota GPS • Integración de Equipo Legado",
       ctaPrimary: "Registrarse para MVP gratuito",
       ctaSecondary: "Ver Cómo Funciona",
-      imageAlt: "Panel de CUBIX ERP",
+      imageAlt: "Panel de CUBIX Construcción",
     },
     // Problem Section
     problem: {
-      title: "LOS ERPs TRADICIONALES SON",
-      titleHighlight: "OBSOLETOS",
+      title: "EL SOFTWARE DE CONSTRUCCIÓN TRADICIONAL ES",
+      titleHighlight: "DESACTUALIZADO",
       painPoints: [
-        { title: "Soporte basado en tickets", description: "Días de espera para correcciones simples" },
-        { title: "Resolución de bugs", description: "Más de 4 horas por incidente" },
-        { title: "Consultores caros", description: "Costos continuos de €100-200/hora" },
-        { title: "IA como complemento", description: "Sin autonomía real, solo asistencia" },
-        { title: "Sin optimización proactiva", description: "Sistemas reactivos, no predictivos" },
+        {
+          title: "Sin integración IoT",
+          description: "No puede conectar maquinaria heredada",
+        },
+        {
+          title: "Control de calidad manual",
+          description: "Portapapeles a digital - ineficiente",
+        },
+        {
+          title: "Licencias caras por usuario",
+          description: "Costos aumentan con cada nuevo usuario",
+        },
+        {
+          title: "Seguimiento de flota deficiente",
+          description: "Sin monitoreo de equipo en tiempo real",
+        },
+        {
+          title: "Configuración compleja",
+          description: "Meses de consultores y capacitación",
+        },
       ],
       quote:
-        "SAP, Oracle, Odoo... tienen IA. Pero es un ASISTENTE que necesita humanos. Tenemos un AGENTE que funciona autónomamente.",
+        "Odoo, SAP, Procore, Primavera... están construidos para negocios genéricos. CUBIX está construido específicamente para construcción con IoT, control de calidad y gestión de flota desde el primer día.",
     },
     // Solution Section
     solution: {
       title: "CUBIX:",
       titleHighlight: "IA ESTRUCTURAL",
       titleEnd: ", NO COMPLEMENTO",
-      subtitle: "Construido desde cero con IA en su núcleo, no como un complemento",
+      subtitle:
+        "Construido desde cero con IA en su núcleo, no como un complemento",
       features: [
         {
-          title: "90% de Autonomía",
-          description: "La IA maneja operaciones de principio a fin sin intervención humana",
+          title: "IoT para Maquinaria Heredada",
+          description:
+            "Integre equipo analógico antiguo usando visión computacional y sensores simples - sin retrofits caros necesarios",
         },
         {
-          title: "Los Bugs Se Auto-Reparan",
-          description: "Sistema auto-reparador detecta y resuelve problemas automáticamente",
+          title: "Control de Calidad Automatizado",
+          description:
+            "Inspecciones digitales con documentación fotográfica, detección automática de problemas e informes instantáneos de cumplimiento",
         },
-        { title: "Soporte 24/7 <1seg", description: "Respuestas instantáneas de IA, sin tickets, sin espera" },
-        { title: "Sin Consultores", description: "Ahorre €100-200/hora con operaciones autónomas" },
-        { title: "MTTR: 30min vs 4h", description: "8 veces más rápido en tiempo medio de resolución" },
-        { title: "Sistema Auto-Evolucionario", description: "Aprende y optimiza continuamente a partir de sus datos" },
+        {
+          title: "Seguimiento Inteligente de Proyectos",
+          description:
+            "Estado del proyecto en tiempo real, asignación de recursos y predicciones de cronograma impulsadas por análisis de IA",
+        },
+        {
+          title: "Gestión de Flota y Equipos",
+          description:
+            "Rastreo GPS, monitoreo de combustible vía OBD-II, programación de mantenimiento y análisis de costos por proyecto",
+        },
+        {
+          title: "Monitoreo Basado en Visión",
+          description:
+            "La IA lee medidores analógicos, detecta peligros de seguridad, monitorea niveles de materiales - todo desde feeds de cámara",
+        },
+        {
+          title: "Mantenimiento Predictivo",
+          description:
+            "Prevenga fallas de equipo antes de que sucedan - la IA analiza datos de sensores y patrones de uso",
+        },
       ],
     },
     // Architecture Section
     architecture: {
       title: "ARQUITECTURA",
       titleHighlight: "MULTICAPA DE IA DE 4 NIVELES",
-      subtitle: "Sistema de escalada basado en confianza enruta consultas a la capa óptima de IA",
+      subtitle:
+        "Sistema de escalada basado en confianza enruta consultas a la capa óptima de IA",
       layers: [
         {
           name: "IA LOCAL",
           model: "DeepSeek R1 8B",
-          description: "70% de consultas resueltas localmente, tiempo de respuesta <100ms",
+          description:
+            "70% de consultas resueltas localmente, tiempo de respuesta <100ms",
         },
         {
           name: "IA DE SOPORTE",
@@ -948,12 +1260,14 @@ export const translations = {
         {
           name: "IA CENTRAL",
           model: "Llama 3.3 70B",
-          description: "Optimización compleja de bugs y decisiones a nivel de sistema",
+          description:
+            "Optimización compleja de bugs y decisiones a nivel de sistema",
         },
         {
           name: "IA DEVOPS",
           model: "DeepSeek Coder 33B",
-          description: "Auto-reparación de código, resolución autónoma, implementación continua",
+          description:
+            "Auto-reparación de código, resolución autónoma, implementación continua",
         },
       ],
       cta: "Ver Demostración Técnica",
@@ -961,37 +1275,74 @@ export const translations = {
     // Comparison Section
     comparison: {
       title: "CUBIX vs",
-      titleEnd: "SAP/ORACLE/ODOO",
+      titleEnd: "SOFTWARE DE CONSTRUCCIÓN TRADICIONAL",
       tableHeaders: {
         feature: "Característica",
-        traditional: "ERPs Tradicionales",
-        cubix: "CUBIX",
+        traditional: "Odoo, SAP, Procore, Primavera",
+        cubix: "CUBIX Construcción",
       },
       features: [
-        { feature: "IA nativa en el núcleo" },
-        { feature: "Autonomía total (90%)" },
-        { feature: "Bugs auto-reparadores" },
-        { feature: "Soporte instantáneo (<1seg)" },
-        { feature: "Sin consultores necesarios" },
-        { feature: "Tiempo de respuesta", traditional: "Horas/Días", cubix: "<1 segundo" },
-        { feature: "Tiempo medio de reparación", traditional: "Más de 4 horas", cubix: "30 minutos" },
+        { feature: "Integración IoT para maquinaria heredada" },
+        { feature: "Control de calidad digital con auto-informe" },
+        { feature: "Construido para flujos de trabajo de construcción" },
+        { feature: "Precios asequibles basados en proyecto" },
+        { feature: "Insights de proyecto impulsados por IA" },
+        {
+          feature: "Tiempo de configuración",
+          traditional: "Meses con consultores",
+          cubix: "Plug-and-play, funciona inmediatamente",
+        },
+        {
+          feature: "Seguimiento de flota/equipo",
+          traditional: "Limitado o complemento",
+          cubix: "Integración GPS + OBD-II incorporada",
+        },
       ],
     },
     // Modules Section
     modules: {
       title: "MVP",
       titleHighlight: "MÓDULOS INCLUIDOS",
-      subtitle: "Características principales listas para el lanzamiento de su negocio",
+      subtitle:
+        "Características principales listas para el lanzamiento de su negocio",
       items: [
-        { name: "CRM y Leads", description: "Gestión de relaciones con clientes y seguimiento de leads" },
-        { name: "Ventas y Facturación", description: "Ciclo completo de ventas y facturación automatizada" },
-        { name: "Pedidos de Compra", description: "Adquisición y gestión de proveedores" },
-        { name: "Gestión de Inventario", description: "Control de stock en tiempo real y almacenes" },
-        { name: "Contabilidad", description: "Gestión financiera completa y informes" },
-        { name: "Informes con IA", description: "Análisis inteligentes y pronósticos" },
-        { name: "Flujos Automatizados", description: "Automatización personalizada de procesos de negocio" },
-        { name: "Permisos y Seguridad", description: "Acceso basado en roles y protección de datos" },
-        { name: "Multi-idioma", description: "Soporte internacional y localización" },
+        {
+          name: "CRM y Leads",
+          description:
+            "Gestión de relaciones con clientes y seguimiento de leads",
+        },
+        {
+          name: "Ventas y Facturación",
+          description: "Ciclo completo de ventas y facturación automatizada",
+        },
+        {
+          name: "Pedidos de Compra",
+          description: "Adquisición y gestión de proveedores",
+        },
+        {
+          name: "Gestión de Inventario",
+          description: "Control de stock en tiempo real y almacenes",
+        },
+        {
+          name: "Contabilidad",
+          description: "Gestión financiera completa y informes",
+        },
+        {
+          name: "Informes con IA",
+          description: "Análisis inteligentes y pronósticos",
+        },
+        {
+          name: "Flujos Automatizados",
+          description: "Automatización personalizada de procesos de negocio",
+        },
+        {
+          name: "Permisos y Seguridad",
+          description: "Acceso basado en roles y protección de datos",
+        },
+        {
+          name: "Multi-idioma",
+          description: "Soporte internacional y localización",
+        },
       ],
       note: "Estos 9 módulos principales están incluidos en el MVP. El producto final tendrá más de 70 módulos abrangentes.",
     },
@@ -1036,31 +1387,51 @@ export const translations = {
           phase: "Fase 2",
           name: "APP CRM",
           duration: "1-2 meses",
-          features: ["Módulo CRM Completo", "Leads y Oportunidades", "Automatización de Marketing"],
+          features: [
+            "Módulo CRM Completo",
+            "Leads y Oportunidades",
+            "Automatización de Marketing",
+          ],
         },
         {
           phase: "Fase 3",
           name: "APP VENTAS",
           duration: "1-2 meses",
-          features: ["Módulo de Ventas Completo", "Presupuestos y Pedidos", "Facturas y Pagos"],
+          features: [
+            "Módulo de Ventas Completo",
+            "Presupuestos y Pedidos",
+            "Facturas y Pagos",
+          ],
         },
         {
           phase: "Fase 4",
           name: "APP INVENTARIO",
           duration: "1-2 meses",
-          features: ["Módulo de Inventario Completo", "Almacenes y Stock", "Lotes y Números de Serie"],
+          features: [
+            "Módulo de Inventario Completo",
+            "Almacenes y Stock",
+            "Lotes y Números de Serie",
+          ],
         },
         {
           phase: "Fase 5",
           name: "APP COMPRAS",
           duration: "1-2 meses",
-          features: ["Módulo de Compras Completo", "Requisiciones y Pedidos", "Gestión de Proveedores"],
+          features: [
+            "Módulo de Compras Completo",
+            "Requisiciones y Pedidos",
+            "Gestión de Proveedores",
+          ],
         },
         {
           phase: "Fase 6",
           name: "APP CONTABILIDAD",
           duration: "1-2 meses",
-          features: ["Módulo de Contabilidad Completo", "Gestión Financiera", "Informes Avanzados"],
+          features: [
+            "Módulo de Contabilidad Completo",
+            "Gestión Financiera",
+            "Informes Avanzados",
+          ],
         },
       ],
       note: "Desarrollo paralelo después de la Fase 1 acelera el tiempo al mercado",
@@ -1082,7 +1453,8 @@ export const translations = {
     earlyAccess: {
       title: "ÚNASE A NUESTRO",
       titleHighlight: "PROGRAMA DE ACCESO PRONTO",
-      subtitle: "Sea uno de los primeros en experimentar CUBIX y moldear su futuro",
+      subtitle:
+        "Sea uno de los primeros en experimentar CUBIX y moldear su futuro",
       tiers: [
         {
           name: "ALFA CERRADO",
@@ -1125,12 +1497,14 @@ export const translations = {
           {
             icon: "Trophy",
             title: "Estado de Fundador",
-            description: "Reconocido como usuario fundador con distintivo exclusivo y beneficios vitales.",
+            description:
+              "Reconocido como usuario fundador con distintivo exclusivo y beneficios vitales.",
           },
           {
             icon: "Target",
             title: "Moldar el Producto",
-            description: "Su feedback influye directamente en las características y prioridades de la ruta.",
+            description:
+              "Su feedback influye directamente en las características y prioridades de la ruta.",
           },
         ],
         note: "Los descuentos solo aplican a planes de pago anuales o de 2 años (no disponibles para facturación mensual). Los testadores Alpha deben comprometerse con el plan de 2 años para recibir un 30% de descuento. Los testadores Beta deben comprometerse con el plan anual para recibir un 10% de descuento. Los descuentos aplican a participantes activos que proporcionan feedback significativo.",
@@ -1144,7 +1518,8 @@ export const translations = {
     team: {
       title: "CONOZCA A LA",
       titleHighlight: "EQUIPA DE DESARROLLO",
-      subtitle: "Ingenieros experimentados construyendo el futuro de los sistemas ERP autónomos",
+      subtitle:
+        "Ingenieros experimentados construyendo el futuro de los sistemas ERP autónomos",
       members: [
         {
           name: "Bruno Coelho",
@@ -1209,17 +1584,22 @@ export const translations = {
     demo: {
       title: "INSCRIVEZ-VOUS GRATUITEMENT",
       titleHighlight: "ACCÈS AU MVP",
-      subtitle: "Rejoignez les early adopters et soyez le premier à découvrir la gestion d'entreprise avec IA de CUBIX",
+      subtitle:
+        "Rejoignez les early adopters et soyez le premier à découvrir la gestion d'entreprise avec IA de CUBIX",
       form: {
         fullName: "Nom Complet",
         email: "Email Professionnel",
         company: "Entreprise",
         phone: "Téléphone",
         employees: "Nombre d'Employés",
+        program: "Programme",
         comments: "Commentaires",
         commentsPlaceholder: "Parlez-nous de vos besoins...",
         privacy: "J'accepte la politique de confidentialité",
         submit: "S'inscrire pour Votre MVP Gratuit",
+        submitAlpha: "Rejoindre l'Alpha Fermée",
+        submitBeta: "Rejoindre la Bêta Ouverte",
+        submitMVP: "Rejoindre le Lancement MVP",
         submitting: "Envoi...",
         required: "*",
         selectPlaceholder: "Sélectionner...",
@@ -1229,9 +1609,16 @@ export const translations = {
           "51-200": "51-200",
           "200+": "200+",
         },
+        programOptions: {
+          placeholder: "Sélectionner le programme...",
+          alpha: "Alpha Fermée (Juillet 2026)",
+          beta: "Bêta Ouverte (Septembre 2026)",
+          mvp: "Lancement MVP (Janvier 2027)",
+        },
         securityNote: "Vos données sont sécurisées",
         contactTime: "Contact sous 24h",
-        alert: "⚠️ Places limitées pour le MVP - les early adopters reçoivent des avantages exclusifs",
+        alert:
+          "⚠️ Places limitées pour le MVP - les early adopters reçoivent des avantages exclusifs",
       },
       success: {
         title: "¡Bienvenido al MVP de CUBIX!",
@@ -1250,7 +1637,8 @@ export const translations = {
             "CUBIX no requiere consultores para la implementación, a diferencia de los ERPs tradicionales. Ofrecemos servicios de consultoría opcionales si prefiere contacto humano, pero también tenemos inteligencia artificial integrada que puede responder a cualquier pregunta de la mejor manera posible. Esta es una ventaja competitiva porque la consultoría es opcional, no obligatoria. Las empresas pueden ahorrar dinero usando la IA incorporada en lugar de pagar por costosas tarifas de consultoría.",
         },
         {
-          question: "Si quiero cambiar de un ERP que ya tengo a CUBIX, ¿cuáles son mis ventajas?",
+          question:
+            "Si quiero cambiar de un ERP que ya tengo a CUBIX, ¿cuáles son mis ventajas?",
           answer:
             "Tenemos un sistema que puede run simultáneamente con su ERP existente, permitiéndole probar CUBIX al mismo tiempo. Todos los datos creados tanto en CUBIX como en su otro ERP se comparten entre los dos sistemas. Capturamos todos los datos de ambos lados y sincronizamoslos automáticamente. Por ejemplo, cree una factura en cualquier sistema y aparecerá en ambos. Su ERP necesita ser compatible con conexiones webhook o API para esta integración. De esta manera, puede probar CUBIX completamente antes de migrar totalmente.",
         },
@@ -1284,11 +1672,12 @@ export const translations = {
     },
     // Footer
     footer: {
-      tagline: "El primer ERP con IA que funciona autónomamente",
+      tagline:
+        "El primer sistema construido para la industria de la construcción",
       product: {
         title: "PRODUCTO",
-        features: "Características",
-        technology: "Tecnología",
+        features: "Características de Construcción",
+        technology: "Tecnología IoT",
         pricing: "Precios",
       },
       company: {
@@ -1303,16 +1692,18 @@ export const translations = {
         terms: "Términos de Servicio",
         cookies: "Cookies",
       },
-      copyright: "© 2025 CUBIX ERP. Todos los derechos reservados.",
+      copyright: "© 2025 CUBIX Construcción. Todos los derechos reservados.",
     },
     // Construction Banner
     banner: {
-      message: "🚧 Esta página está actualmente en desarrollo. Las características y el contenido pueden cambiar.",
+      message:
+        "🚧 Esta página está actualmente en desarrollo. Las características y el contenido pueden cambiar.",
     },
     underConstruction: {
       title: "PÁGINA EN",
       titleHighlight: "CONSTRUCCIÓN",
-      subtitle: "Estamos trabajando arduamente para traerle esta característica",
+      subtitle:
+        "Estamos trabajando arduamente para traerle esta característica",
       message:
         "Esta página está actualmente en desarrollo. La plataforma CUBIX está en construcción y nuevas características están siendo agregadas regularmente. Gracias por su paciencia mientras construimos el futuro de los sistemas ERP autónomos.",
       eta: "Conclusión esperada: Q1 2026",
@@ -1336,7 +1727,8 @@ export const translations = {
       titleHighlight: "FONCTIONNE AUTONOMEMENT",
       titleEnd: ", PASSEMENT DE L'ASSISTANCE",
       subtitle: "90% d'Autonomie",
-      subtitleFeatures: "Auto-Réparation des Bugs • Support Instantané 24/7 • Aucun Consultant",
+      subtitleFeatures:
+        "Auto-Réparation des Bugs • Support Instantané 24/7 • Aucun Consultant",
       ctaPrimary: "S'inscrire pour le MVP gratuit",
       ctaSecondary: "Voir Comment Cela Fonctionne",
       imageAlt: "Tableau de bord CUBIX ERP",
@@ -1346,11 +1738,26 @@ export const translations = {
       title: "LES ERP TRADITIONNELS SONT",
       titleHighlight: "OBSOLÈTES",
       painPoints: [
-        { title: "Support basé sur les tickets", description: "Jours d'attente pour les corrections simples" },
-        { title: "Résolution des bugs", description: "Plus de 4 heures par incident" },
-        { title: "Consultants coûteux", description: "Coûts continuels de €100-200/h" },
-        { title: "IA comme complément", description: "Aucune véritable autonomie, juste assistance" },
-        { title: "Aucune optimisation proactive", description: "Systèmes réactifs, pas prédictifs" },
+        {
+          title: "Support basé sur les tickets",
+          description: "Jours d'attente pour les corrections simples",
+        },
+        {
+          title: "Résolution des bugs",
+          description: "Plus de 4 heures par incident",
+        },
+        {
+          title: "Consultants coûteux",
+          description: "Coûts continuels de €100-200/h",
+        },
+        {
+          title: "IA comme complément",
+          description: "Aucune véritable autonomie, juste assistance",
+        },
+        {
+          title: "Aucune optimisation proactive",
+          description: "Systèmes réactifs, pas prédictifs",
+        },
       ],
       quote:
         "SAP, Oracle, Odoo... ont de l'IA. Mais c'est un ASSISTANT qui nécessite des humains. Nous avons un AGENT qui fonctionne de manière autonome.",
@@ -1362,27 +1769,48 @@ export const translations = {
       titleEnd: ", PAS DE COMPLÉMENT",
       subtitle: "Construit de fond avec l'IA au cœur, pas comme un ajout",
       features: [
-        { title: "90% d'Autonomie", description: "L'IA gère les opérations de bout en bout sans intervention humaine" },
+        {
+          title: "90% d'Autonomie",
+          description:
+            "L'IA gère les opérations de bout en bout sans intervention humaine",
+        },
         {
           title: "Les Bugs S'Auto-Réparent",
-          description: "Système auto-réparateur détecte et résout les problèmes automatiquement",
+          description:
+            "Système auto-réparateur détecte et résout les problèmes automatiquement",
         },
-        { title: "Support 24/7 <1sec", description: "Réponses instantanées de l'IA, sans tickets, sans attente" },
-        { title: "Aucun Consultant", description: "Économisez €100-200/h avec des opérations autonomes" },
-        { title: "MTTR: 30min vs 4h", description: "8 fois plus rapide pour le temps moyen de résolution" },
-        { title: "Système Auto-Évoluant", description: "Apprend et optimise continuellement à partir de vos données" },
+        {
+          title: "Support 24/7 <1sec",
+          description:
+            "Réponses instantanées de l'IA, sans tickets, sans attente",
+        },
+        {
+          title: "Aucun Consultant",
+          description: "Économisez €100-200/h avec des opérations autonomes",
+        },
+        {
+          title: "MTTR: 30min vs 4h",
+          description: "8 fois plus rapide pour le temps moyen de résolution",
+        },
+        {
+          title: "Système Auto-Évoluant",
+          description:
+            "Apprend et optimise continuellement à partir de vos données",
+        },
       ],
     },
     // Architecture Section
     architecture: {
       title: "ARCHITECTURE",
       titleHighlight: "ARCHECTURE IA DE 4 COUCES MULTINIVEAUX",
-      subtitle: "Système d'escalade basé sur la confiance dirige les requêtes vers la couche optimale d'IA",
+      subtitle:
+        "Système d'escalade basé sur la confiance dirige les requêtes vers la couche optimale d'IA",
       layers: [
         {
           name: "IA LOCALE",
           model: "DeepSeek R1 8B",
-          description: "70% des requêtes résolues localement, temps de réponse <100ms",
+          description:
+            "70% des requêtes résolues localement, temps de réponse <100ms",
         },
         {
           name: "IA DE SUPPORT",
@@ -1397,7 +1825,8 @@ export const translations = {
         {
           name: "IA DEVOPS",
           model: "DeepSeek Coder 33B",
-          description: "Auto-réparation de code, résolution autonome, déploiement continu",
+          description:
+            "Auto-réparation de code, résolution autonome, déploiement continu",
         },
       ],
       cta: "Voir la Démo Technique",
@@ -1417,25 +1846,61 @@ export const translations = {
         { feature: "Bugs auto-réparés" },
         { feature: "Support instantané (<1sec)" },
         { feature: "Aucun consultant nécessaire" },
-        { feature: "Temps de réponse", traditional: "Heures/Jours", cubix: "<1 seconde" },
-        { feature: "Temps moyen de réparation", traditional: "Plus de 4 heures", cubix: "30 minutes" },
+        {
+          feature: "Temps de réponse",
+          traditional: "Heures/Jours",
+          cubix: "<1 seconde",
+        },
+        {
+          feature: "Temps moyen de réparation",
+          traditional: "Plus de 4 heures",
+          cubix: "30 minutes",
+        },
       ],
     },
     // Modules Section
     modules: {
       title: "MVP",
       titleHighlight: "MODULES INCLUS",
-      subtitle: "Fonctionnalités principales prêtes pour le lancement de votre entreprise",
+      subtitle:
+        "Fonctionnalités principales prêtes pour le lancement de votre entreprise",
       items: [
-        { name: "CRM et Leads", description: "Gestion des relations clients et suivi des leads" },
-        { name: "Ventes et Facturation", description: "Cycle de vente complet et facturation automatique" },
-        { name: "Commandes d'Achat", description: "Approvisionnement et gestion des fournisseurs" },
-        { name: "Gestion de Stock", description: "Contrôle de stock en temps réel et entrepôt" },
-        { name: "Comptabilité", description: "Gestion financière complète et rapports" },
-        { name: "Rapports avec IA", description: "Analyses intelligentes et prévisions" },
-        { name: "Flux Automatisés", description: "Automatisation personnalisée de processus métier" },
-        { name: "Permissions et Sécurité", description: "Accès basé sur les rôles et protection des données" },
-        { name: "Multi-langue", description: "Support international et localisation" },
+        {
+          name: "CRM et Leads",
+          description: "Gestion des relations clients et suivi des leads",
+        },
+        {
+          name: "Ventes et Facturation",
+          description: "Cycle de vente complet et facturation automatique",
+        },
+        {
+          name: "Commandes d'Achat",
+          description: "Approvisionnement et gestion des fournisseurs",
+        },
+        {
+          name: "Gestion de Stock",
+          description: "Contrôle de stock en temps réel et entrepôt",
+        },
+        {
+          name: "Comptabilité",
+          description: "Gestion financière complète et rapports",
+        },
+        {
+          name: "Rapports avec IA",
+          description: "Analyses intelligentes et prévisions",
+        },
+        {
+          name: "Flux Automatisés",
+          description: "Automatisation personnalisée de processus métier",
+        },
+        {
+          name: "Permissions et Sécurité",
+          description: "Accès basé sur les rôles et protection des données",
+        },
+        {
+          name: "Multi-langue",
+          description: "Support international et localisation",
+        },
       ],
       note: "Ces 9 modules principaux sont inclus dans le MVP. Le produit final comptera plus de 70 modules abordatifs.",
     },
@@ -1480,31 +1945,51 @@ export const translations = {
           phase: "Phase 2",
           name: "APP CRM",
           duration: "1-2 mois",
-          features: ["Module CRM Complet", "Leads et Opportunités", "Automatisation Marketing"],
+          features: [
+            "Module CRM Complet",
+            "Leads et Opportunités",
+            "Automatisation Marketing",
+          ],
         },
         {
           phase: "Phase 3",
           name: "APP VENTES",
           duration: "1-2 mois",
-          features: ["Module Ventes Complet", "Devis et Commandes", "Factures et Paiements"],
+          features: [
+            "Module Ventes Complet",
+            "Devis et Commandes",
+            "Factures et Paiements",
+          ],
         },
         {
           phase: "Phase 4",
           name: "APP INVENTAIRE",
           duration: "1-2 mois",
-          features: ["Module Inventaire Complet", "Entrepôts et Stock", "Lots et Numéros de Série"],
+          features: [
+            "Module Inventaire Complet",
+            "Entrepôts et Stock",
+            "Lots et Numéros de Série",
+          ],
         },
         {
           phase: "Phase 5",
           name: "APP ACHATS",
           duration: "1-2 mois",
-          features: ["Module Achats Complet", "Requêtes et Commandes", "Gestion des Fournisseurs"],
+          features: [
+            "Module Achats Complet",
+            "Requêtes et Commandes",
+            "Gestion des Fournisseurs",
+          ],
         },
         {
           phase: "Phase 6",
           name: "APP COMPTABILITÉ",
           duration: "1-2 mois",
-          features: ["Module Comptabilité Complet", "Gestion Financière", "Rapports Avancés"],
+          features: [
+            "Module Comptabilité Complet",
+            "Gestion Financière",
+            "Rapports Avancés",
+          ],
         },
       ],
       note: "Développement parallèle après la Phase 1 accélère le temps sur le marché",
@@ -1526,7 +2011,8 @@ export const translations = {
     earlyAccess: {
       title: "JOIN NOTRE",
       titleHighlight: "PROGRAMME D'ACCÈS PRÉCOCE",
-      subtitle: "Soyez parmi les premiers à expérimenter CUBIX et façonner son avenir",
+      subtitle:
+        "Soyez parmi les premiers à expérimenter CUBIX et façonner son avenir",
       tiers: [
         {
           name: "ALPHA FERMÉ",
@@ -1569,12 +2055,14 @@ export const translations = {
           {
             icon: "Trophy",
             title: "Statut de Fondateur",
-            description: "Reconnu comme utilisateur fondateur avec badge exclusif et avantages vitaux.",
+            description:
+              "Reconnu comme utilisateur fondateur avec badge exclusif et avantages vitaux.",
           },
           {
             icon: "Target",
             title: "Faire Évoluer le Produit",
-            description: "Votre feedback influence directement les fonctionnalités et les priorités de la route.",
+            description:
+              "Votre feedback influence directement les fonctionnalités et les priorités de la route.",
           },
         ],
         note: "Les remises s'appliquent uniquement aux plans de paiement annuel ou biennal (non disponible pour la facturation mensuelle). Les testeurs Alpha doivent s'engager avec le plan biennal pour bénéficier d'un 30% de remise. Les testeurs Beta doivent s'engager avec le plan annuel pour bénéficier d'un 10% de remise. Les remises s'appliquent aux participants actifs qui fournissent un feedback significatif.",
@@ -1588,7 +2076,8 @@ export const translations = {
     team: {
       title: "CONNAÎTRE L'ÉQUIPE",
       titleHighlight: "DE DÉVELOPPEMENT",
-      subtitle: "Ingénieurs expérimentés construisant l'avenir des systèmes ERP autonomes",
+      subtitle:
+        "Ingénieurs expérimentés construisant l'avenir des systèmes ERP autonomes",
       members: [
         {
           name: "Bruno Coelho",
@@ -1653,17 +2142,22 @@ export const translations = {
     demo: {
       title: "INSCRIVEZ-VOUS GRATUITEMENT",
       titleHighlight: "ACCÈS AU MVP",
-      subtitle: "Rejoignez les early adopters et soyez le premier à découvrir la gestion d'entreprise avec IA de CUBIX",
+      subtitle:
+        "Rejoignez les early adopters et soyez le premier à découvrir la gestion d'entreprise avec IA de CUBIX",
       form: {
         fullName: "Nom Complet",
         email: "Email Professionnel",
         company: "Entreprise",
         phone: "Téléphone",
         employees: "Nombre d'Employés",
+        program: "Programme",
         comments: "Commentaires",
         commentsPlaceholder: "Parlez-nous de vos besoins...",
         privacy: "J'accepte la politique de confidentialité",
         submit: "S'inscrire pour Votre MVP Gratuit",
+        submitAlpha: "Rejoindre l'Alpha Fermée",
+        submitBeta: "Rejoindre la Bêta Ouverte",
+        submitMVP: "Rejoindre le Lancement MVP",
         submitting: "Envoi...",
         required: "*",
         selectPlaceholder: "Sélectionner...",
@@ -1673,9 +2167,16 @@ export const translations = {
           "51-200": "51-200",
           "200+": "200+",
         },
+        programOptions: {
+          placeholder: "Sélectionner le programme...",
+          alpha: "Alpha Fermée (Juillet 2026)",
+          beta: "Bêta Ouverte (Septembre 2026)",
+          mvp: "Lancement MVP (Janvier 2027)",
+        },
         securityNote: "Vos données sont sécurisées",
         contactTime: "Contact sous 24h",
-        alert: "⚠️ Places limitées pour le MVP - les early adopters reçoivent des avantages exclusifs",
+        alert:
+          "⚠️ Places limitées pour le MVP - les early adopters reçoivent des avantages exclusifs",
       },
       success: {
         title: "Bienvenue au MVP de CUBIX !",
@@ -1694,7 +2195,8 @@ export const translations = {
             "CUBIX ne nécessite pas de consultants pour l'implémentation, contrairement aux ERP traditionnels. Nous offrons des services de consulting optionnels si vous préférez un contact humain, mais nous avons également une intelligence artificielle intégrée qui peut répondre à toute question de la meilleure manière possible. C'est une avantage compétitif car le consulting est optionnel, pas obligatoire. Les entreprises peuvent économiser de l'argent en utilisant l'IA intégrée au lieu de payer des frais de consulting coûteux.",
         },
         {
-          question: "Si je veux passer de l'ERP que j'ai déjà à CUBIX, quels sont mes avantages?",
+          question:
+            "Si je veux passer de l'ERP que j'ai déjà à CUBIX, quels sont mes avantages?",
           answer:
             "Nous avons un système qui peut fonctionner simultanément avec votre ERP existant, vous permettant de tester CUBIX en même temps. Tous les données créées à la fois dans CUBIX et votre autre ERP sont partagées entre les deux systèmes. Nous capturons tous les données des deux côtés et les synchronisons automatiquement. Par exemple, créez une facture dans l'un des deux systèmes et elle apparaît dans les deux. Votre ERP doit être compatible avec des connexions webhook ou API pour cette intégration. De cette façon, vous pouvez tester CUBIX complètement avant de migrer totalement.",
         },
@@ -1728,11 +2230,12 @@ export const translations = {
     },
     // Footer
     footer: {
-      tagline: "Le premier ERP avec IA qui fonctionne de manière autonome",
+      tagline:
+        "Le premier système construit pour l'industrie de la construction",
       product: {
         title: "PRODUIT",
-        features: "Fonctionnalités",
-        technology: "Technologie",
+        features: "Fonctionnalités de Construction",
+        technology: "Technologie IoT",
         pricing: "Tarifs",
       },
       company: {
@@ -1747,11 +2250,12 @@ export const translations = {
         terms: "Conditions d'Utilisation",
         cookies: "Cookies",
       },
-      copyright: "© 2025 CUBIX ERP. Tous droits réservés.",
+      copyright: "© 2025 CUBIX Construction. Tous droits réservés.",
     },
     // Construction Banner
     banner: {
-      message: "🚧 Cette page est actuellement en développement. Les fonctionnalités et le contenu peuvent changer.",
+      message:
+        "🚧 Cette page est actuellement en développement. Les fonctionnalités et le contenu peuvent changer.",
     },
     underConstruction: {
       title: "PAGE EN",
@@ -1764,4 +2268,4 @@ export const translations = {
       signUpMVP: "S'inscrire pour le MVP",
     },
   },
-}
+};

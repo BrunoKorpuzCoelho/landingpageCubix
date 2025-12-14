@@ -1,27 +1,29 @@
 "use client";
 import {
-  Users,
-  ShoppingCart,
+  FolderKanban,
+  ClipboardCheck,
+  Radio,
+  Truck,
+  Wrench,
+  HardHat,
   Package,
-  Warehouse,
-  Calculator,
-  BarChart3,
-  Workflow,
-  Shield,
-  Globe,
+  FileText,
+  DollarSign,
+  ShieldAlert,
 } from "lucide-react";
 import { useLanguage } from "@/contexts/language-context";
 
 const moduleIcons = [
-  Users,
-  ShoppingCart,
-  Package,
-  Warehouse,
-  Calculator,
-  BarChart3,
-  Workflow,
-  Shield,
-  Globe,
+  FolderKanban, // Projects
+  ClipboardCheck, // Quality Control
+  Radio, // IoT Integration
+  Truck, // Fleet Tracking
+  Wrench, // Equipment Management
+  HardHat, // Workforce Management
+  Package, // Materials & Inventory
+  FileText, // Document Management
+  DollarSign, // Financial Tracking
+  ShieldAlert, // Safety & Compliance
 ];
 
 export function ModulesSection() {

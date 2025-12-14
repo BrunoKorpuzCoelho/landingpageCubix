@@ -1,14 +1,14 @@
-"use client"
+"use client";
 
-import { Github, Linkedin, ArrowRight, Award, Calendar } from "lucide-react"
-import { useLanguage } from "@/contexts/language-context"
-import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
-import { useRouter } from "next/navigation"
+import { Github, Linkedin, ArrowRight, Award, Calendar } from "lucide-react";
+import { useLanguage } from "@/contexts/language-context";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { useRouter } from "next/navigation";
 
 export function TeamSection() {
-  const { t } = useLanguage()
-  const router = useRouter()
+  const { t } = useLanguage();
+  const router = useRouter();
 
   return (
     <section id="team" className="py-20 bg-secondary/30">
@@ -17,9 +17,12 @@ export function TeamSection() {
           {/* Header */}
           <div className="text-center space-y-4">
             <h2 className="text-4xl md:text-5xl font-bold text-balance">
-              {t.team.title} <span className="gradient-text">{t.team.titleHighlight}</span>
+              {t.team.title}{" "}
+              <span className="gradient-text">{t.team.titleHighlight}</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">{t.team.subtitle}</p>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              {t.team.subtitle}
+            </p>
           </div>
 
           {/* Team Members Grid */}
@@ -41,7 +44,11 @@ export function TeamSection() {
                       <img
                         src={
                           member.photo ||
-                          `/placeholder.svg?height=112&width=112&query=${encodeURIComponent(member.name + " developer photo") || "/placeholder.svg"}`
+                          `/placeholder.svg?height=112&width=112&query=${
+                            encodeURIComponent(
+                              member.name + " developer photo"
+                            ) || "/placeholder.svg"
+                          }`
                         }
                         alt={member.name}
                         className="w-full h-full rounded-full object-cover"
@@ -70,7 +77,7 @@ export function TeamSection() {
                             variant="secondary"
                             className="bg-primary/10 text-primary border-primary/20 hover:bg-primary/20 text-xs font-semibold px-3 py-1"
                           >
-                            {member.role}
+                            {member.roles[0]}
                           </Badge>
                         )}
                       </div>
@@ -89,7 +96,9 @@ export function TeamSection() {
                     </div>
 
                     {/* Bio */}
-                    <p className="text-sm text-muted-foreground leading-relaxed line-clamp-3">{member.bio}</p>
+                    <p className="text-sm text-muted-foreground leading-relaxed line-clamp-3">
+                      {member.bio}
+                    </p>
 
                     {/* Social Links */}
                     <div className="flex items-center gap-3 pt-2">
@@ -147,5 +156,5 @@ export function TeamSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

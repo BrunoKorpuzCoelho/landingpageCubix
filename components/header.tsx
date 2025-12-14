@@ -1,24 +1,24 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Menu, X } from "lucide-react"
-import { useLanguage } from "@/contexts/language-context"
-import { LanguageSwitcher } from "@/components/language-switcher"
-import { useRouter } from "next/navigation"
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Menu, X } from "lucide-react";
+import { useLanguage } from "@/contexts/language-context";
+import { LanguageSwitcher } from "@/components/language-switcher";
+import { useRouter } from "next/navigation";
 
 export function Header() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const { t } = useLanguage()
-  const router = useRouter()
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { t } = useLanguage();
+  const router = useRouter();
 
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id)
+    const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
-      setMobileMenuOpen(false)
+      element.scrollIntoView({ behavior: "smooth" });
+      setMobileMenuOpen(false);
     }
-  }
+  };
 
   return (
     <header className="fixed top-12 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
@@ -70,14 +70,17 @@ export function Header() {
         <div className="flex items-center gap-4">
           <LanguageSwitcher />
           <Button
-            onClick={() => router.push("/under-construction")}
+            onClick={() => router.push("/?program=MVP#demo")}
             className="hidden md:inline-flex gradient-primary hover:opacity-90 transition-all hover:scale-105 hover:shadow-lg hover:shadow-primary/50"
           >
             {t.nav.signUpMVP}
           </Button>
 
           {/* Mobile Menu Button */}
-          <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="md:hidden text-foreground">
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="md:hidden text-foreground"
+          >
             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
@@ -120,7 +123,10 @@ export function Header() {
               </button>
             </li>
             <li>
-              <Button onClick={() => router.push("/under-construction")} className="gradient-primary w-full">
+              <Button
+                onClick={() => router.push("/?program=MVP#demo")}
+                className="gradient-primary w-full"
+              >
                 {t.nav.signUpMVP}
               </Button>
             </li>
@@ -128,5 +134,5 @@ export function Header() {
         </div>
       )}
     </header>
-  )
+  );
 }

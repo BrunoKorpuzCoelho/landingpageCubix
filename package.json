@@ -57,8 +57,9 @@
     "sonner": "latest",
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7",
+    "validator": "^13.15.23",
     "vaul": "latest",
-    "zod": "3.25.76"
+    "zod": "^3.25.76"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.9",

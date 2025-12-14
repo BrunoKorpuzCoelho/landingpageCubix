@@ -62,8 +62,8 @@ export default function Page() {
             <PricingSection />
           </AnimatedSection>
 
-          <AnimatedSection animation="slide-right">
-            <EarlyAccessSection /> // Use EarlyAccessSection
+          <AnimatedSection animation="fade-in">
+            <EarlyAccessSection />
           </AnimatedSection>
 
           <AnimatedSection animation="fade-in">
